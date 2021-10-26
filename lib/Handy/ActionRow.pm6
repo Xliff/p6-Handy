@@ -39,8 +39,7 @@ class Handy::ActionRow is Handy::PreferencesRow {
     $o.ref if $ref;
     $o;
   }
-
-  method new {
+  multi method new {
     my $action-row = hdy_action_row_new();
 
     $action-row ?? self.bless( :$action-row ) !! Nil;
