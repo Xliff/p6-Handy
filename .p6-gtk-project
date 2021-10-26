@@ -1,0 +1,4 @@
+prefix=Handy
+modules=Handy::Raw::Types
+backups=backup,bitbucket,google-backup,azure-backup,hut
+build_exclude=
