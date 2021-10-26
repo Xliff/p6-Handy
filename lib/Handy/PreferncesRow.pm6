@@ -12,7 +12,7 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
   has HdyPreferencesRow $!hpr;
 
   submethod BUILD ( :$preferences-row ) {
-    self.setHdyPreferencesRow($preference-row) if $preference-row;
+    self.setHdyPreferencesRow($preferences-row) if $preferences-row;
   }
 
   method setHdyPreferencesRow (HdyPreferencesRowAncestry $_) {
@@ -32,7 +32,7 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
     self.setGtkListBoxRow($to-parent);
   }
 
-  multi method new (PreferencesRowAncestry $rpreferences-row, :$ref = True) {
+  multi method new (HdyPreferencesRowAncestry $rpreferences-row, :$ref = True) {
     return Nil unless $preferences-row;
 
     my $o = self.bless(:$preferences-row);
