@@ -3,6 +3,7 @@ use v6.c;
 use NativeCall;
 
 use GLib::Raw::Definitions;
+use GTK::Raw::Definitions;
 use Handy::Raw::Definitions;
 
 unit package Handy::Raw::ExpanderRow;

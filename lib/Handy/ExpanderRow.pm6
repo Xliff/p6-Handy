@@ -5,33 +5,33 @@ use Handy::Raw::ExpanderRow;
 
 use Handy::ActionRow;
 
-our subset HdyExpansionRowAncestry is export of Mu
-  where HdyExpansionRow | HdyActionRowAncestry;
+our subset HdyExpanderRowAncestry is export of Mu
+  where HdyExpanderRow | HdyActionRowAncestry;
 
 class Handy::ExpanderRow is Handy::ActionRow {
   has HdyExpanderRow $!her;
 
   submethod BUILD ( :$expander-row ) {
-    self.setHdyExpansionRow($action-row) if $action-row;
+    self.setHdyExpansionRow($expander-row) if $expander-row;
   }
 
-  method setHdyExpansionRow (HdyExpansionRowAncestry $_) {
+  method setHdyExpanderRow (HdyExpanderRowAncestry $_) {
     my $to-parent;
 
-    $!lbr = do {
-      when HdyExpansionRow {
+    $!her = do {
+      when HdyExpanderRow {
         $to-parent = cast(HdyActionRow, $_);
         $_;
       }
       default {
         $to-parent = $_;
-        cast(HdyExpansionRow, $_);
+        cast(HdyExpanderRow, $_);
       }
     }
     self.setHdyActionRow($to-parent);
   }
 
-  multi method new (HdyExpansionRowAncestry $expander-row, :$ref = True) {
+  multi method new (HdyExpanderRowAncestry $expander-row, :$ref = True) {
     return Nil unless $expander-row;
 
     my $o = self.bless(:$expander-row);
