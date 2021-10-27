@@ -6,19 +6,19 @@ use Handy::Raw::ActionRow;
 use Handy::PreferencesRow;
 
 our subset HdyActionRowAncestry is export of Mu
-  where HdyActionRow | GtkListBoxAncestry;
+  where HdyActionRow | HdyPreferencesRowAncestry;
 
 class Handy::ActionRow is Handy::PreferencesRow {
   has HdyActionRow $!har;
 
-  submethod BUILD ( :$actionrow ) {
+  submethod BUILD ( :$action-row ) {
     self.setHdyActionRow($action-row) if $action-row;
   }
 
   method setHdyActionRow (HdyActionRowAncestry $_) {
     my $to-parent;
 
-    $!lbr = do {
+    $!har = do {
       when HdyActionRow {
         $to-parent = cast(HdyPreferencesRow, $_);
         $_;
@@ -32,10 +32,10 @@ class Handy::ActionRow is Handy::PreferencesRow {
     self.setHdyPreferencesRow($to-parent);
   }
 
-  multi method new (HdyActionRowAncestry $rpreferences-row, :$ref = True) {
-    return Nil unless $actionrow;
+  multi method new (HdyActionRowAncestry $action-row, :$ref = True) {
+    return Nil unless $action-row;
 
-    my $o = self.bless(:$actionrow);
+    my $o = self.bless( :$action-row );
     $o.ref if $ref;
     $o;
   }
