@@ -6,7 +6,7 @@ use Handy::Raw::PreferenceRow;
 use GTK::ListBoxRow;
 
 our subset HdyPreferencesRowAncestry is export of Mu
-  where HdyPreferencesRow | GtkListBoxAncestry;
+  where HdyPreferencesRow | GtkListBoxRowAncestry;
 
 class Handy::PreferencesRow is GTK::ListBoxRow {
   has HdyPreferencesRow $!hpr;
@@ -18,7 +18,7 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
   method setHdyPreferencesRow (HdyPreferencesRowAncestry $_) {
     my $to-parent;
 
-    $!lbr = do {
+    $!hpr = do {
       when HdyPreferencesRow {
         $to-parent = cast(GtkListBoxRow, $_);
         $_;
@@ -32,10 +32,10 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
     self.setGtkListBoxRow($to-parent);
   }
 
-  multi method new (HdyPreferencesRowAncestry $rpreferences-row, :$ref = True) {
+  multi method new (HdyPreferencesRowAncestry $preferences-row, :$ref = True) {
     return Nil unless $preferences-row;
 
-    my $o = self.bless(:$preferences-row);
+    my $o = self.bless( :$preferences-row );
     $o.ref if $ref;
     $o;
   }
@@ -49,14 +49,12 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
     Proxy.new:
       FETCH => -> $     { self.get_title    }
       STORE => -> $, \v { self.set_title(v) }
-    );
   }
 
   method use_underline is rw {
     Proxy.new:
       FETCH => -> $     { self.get_use_underline    },
       STORE => -> $, \v { self.set_use_underline(v) };
-    );
   }
 
   method get_title {
