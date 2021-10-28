@@ -19,7 +19,7 @@ class Handy::Carousel is GTK::EventBox {
 
   method setHdyCarousel (HdyCarouselAncestry $_) {\
     my $to-parent;
-    
+
     $!hc = do {
       when HdyCarousel  {
         $to-parent = cast(GtkEventBox, $_);
@@ -45,9 +45,8 @@ class Handy::Carousel is GTK::EventBox {
     $o.ref if $ref;
     $o;
   }
-
-  method new {
-    $carousel = hdy_carousel_new();
+  multi method new {
+    my $carousel = hdy_carousel_new();
 
     $carousel ?? self.bless( :$carousel ) !! Nil;
   }
@@ -88,6 +87,58 @@ class Handy::Carousel is GTK::EventBox {
     Proxy.new:
       FETCH => -> $     { self.get_spacing    },
       STORE => -> $, \v { self.set_spacing(v) }
+  }
+
+  multi method get_property (
+    Str() $name where * eq <
+      allow-long-swipes
+      allow-mouse-drag
+      allow-scroll-wheel
+      interactive
+    >.any
+  ) {
+    my $v = GLib::Value.new(G_TYPE_BOOLEAN);
+
+    samewith($name, $v);
+  }
+
+  multi method get_prop (
+    Str() $name where * eq <
+      allow-long-swipes
+      allow-mouse-drag
+      allow-scroll-wheel
+      interactive
+    >.any
+  ) {
+    my $v = GLib::Value.new(G_TYPE_BOOLEAN);
+
+    samewith($name, $v);
+  }
+
+  multi method get_property (
+    Str() $name where * eq <
+      animation-duration
+      n-pages
+      reveal-duration
+      spacing
+    >.any
+  ) {
+    my $v = GLib::Value.new(G_TYPE_UINT);
+
+    samewith($name, $v);
+  }
+
+  multi method get_prop (
+    Str() $name where * eq <
+      allow-long-swipes
+      allow-mouse-drag
+      allow-scroll-wheel
+      interactive
+    >.any
+  ) {
+    my $v = GLib::Value.new(G_TYPE_BOOLEAN);
+
+    samewith($name, $v);
   }
 
   # Is originally:
