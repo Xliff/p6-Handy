@@ -1,6 +1,6 @@
 use v6.c;
 
-use NativeCall;a
+use NativeCall;
 
 use GLib::Roles::Pointers;
 
@@ -26,3 +26,6 @@ class HdyWindow            is repr<CPointer> does GLib::Roles::Pointers is expor
 
 # Roles
 class HdySwipeable         is repr<CPointer> does GLib::Roles::Pointers is export { }
+
+# Opaques
+class HdySwipeTracker      is repr<CPointer> does GLib::Roles::Pointers is export { }
