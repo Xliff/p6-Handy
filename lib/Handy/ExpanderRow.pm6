@@ -9,7 +9,7 @@ our subset HdyExpanderRowAncestry is export of Mu
   where HdyExpanderRow | HdyActionRowAncestry;
 
 class Handy::ExpanderRow is Handy::ActionRow {
-  has HdyExpanderRow $!her;
+  has HdyExpanderRow $!her is implementor;
 
   submethod BUILD ( :$expander-row ) {
     self.setHdyExpansionRow($expander-row) if $expander-row;

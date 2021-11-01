@@ -9,7 +9,7 @@ our subset HdyActionRowAncestry is export of Mu
   where HdyActionRow | HdyPreferencesRowAncestry;
 
 class Handy::ActionRow is Handy::PreferencesRow {
-  has HdyActionRow $!har;
+  has HdyActionRow $!har is implementor;
 
   submethod BUILD ( :$action-row ) {
     self.setHdyActionRow($action-row) if $action-row;

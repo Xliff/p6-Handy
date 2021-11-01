@@ -15,7 +15,7 @@ our subset HdyCarouselAncestry is export of Mu
 class Handy::Carousel is GTK::EventBox {
   also does Handy::Roles::Swipeable;
 
-  has HdyCarousel $!hc;
+  has HdyCarousel $!hc is implementor;
 
   submethod BUILD( :$carousel ) {
     self.setGtkEventBox($carousel) if $carousel;

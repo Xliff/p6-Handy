@@ -9,7 +9,7 @@ our subset HdyPreferencesRowAncestry is export of Mu
   where HdyPreferencesRow | GtkListBoxRowAncestry;
 
 class Handy::PreferencesRow is GTK::ListBoxRow {
-  has HdyPreferencesRow $!hpr;
+  has HdyPreferencesRow $!hpr is implementor;
 
   submethod BUILD ( :$preferences-row ) {
     self.setHdyPreferencesRow($preferences-row) if $preferences-row;

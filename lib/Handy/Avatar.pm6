@@ -14,7 +14,7 @@ our subset HdyAvatarAncestry is export of Mu
   where HdyAvatar | GtkDrawingAreaAncestry;
 
 class Handy::Avatar is GTK::DrawingArea {
-  has HdyAvatar $!ha;
+  has HdyAvatar $!ha is implementor;
 
   submethod BUILD( :$avatar ) {
     self.setHandyAvatar($avatar) if $avatar;

@@ -11,7 +11,7 @@ our subset HdyKeypadAncestry is export of Mu
   where HdyKeypad | GtkBinAncestry;
 
 class Handy::Keypad is GTK::Bin {
-  has HdyKeypad $!hk;
+  has HdyKeypad $!hk is implementor;
 
   submethod BUILD(:$keypad) {
     self.setHdyKeypad($keypad) if $keypad;
