@@ -7,10 +7,14 @@ use Handy::Raw::Carousel;
 
 use GTK::EventBox;
 
+use Handy::Roles::Swipeable;
+
 our subset HdyCarouselAncestry is export of Mu
-  where HdyCarousel | GtkEventBoxAncestry;
+  where HdyCarousel | HdySwipeable | GtkEventBoxAncestry;
 
 class Handy::Carousel is GTK::EventBox {
+  also does Handy::Roles::Swipeable;
+
   has HdyCarousel $!hc;
 
   submethod BUILD( :$carousel ) {
@@ -26,12 +30,19 @@ class Handy::Carousel is GTK::EventBox {
         $_;
       }
 
+      when HdySwipeable {
+        $to-parent = cast(GtkEventBox, $_);
+        $!hs = $_;
+        cast(HdyCarousel, $_);
+      }
+
       default {
         $to-parent = $_;
         cast(HdyCarousel, $_);
       }
     }
     self.setGtkEventBox($to-parent);
+    self.roleInit-HdySwipeable;
   }
 
   method GTK::Raw::Definitions::HdyCarousel
