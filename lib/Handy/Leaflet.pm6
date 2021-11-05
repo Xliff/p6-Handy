@@ -6,6 +6,7 @@ use Handy::Raw::Types;
 use Handy::Raw::Leaflet;
 
 use GTK::Container;
+use GTK::Widget;
 
 our subset HdyLeafletAncestry is export of Mu
   when HdyLeaflet | GtkContainerAncestry;
@@ -161,7 +162,7 @@ class Handy::Leaflet is GTK::Container {
     propReturnObject(
       hdy_leaflet_get_visible_child($!hl),
       $raw,
-      |self.getTypePair
+      |GTK::Widget.getTypePair
     );
   }
 
