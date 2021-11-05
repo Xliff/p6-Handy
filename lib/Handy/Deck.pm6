@@ -150,7 +150,7 @@ class Handy::Deck is GTK::Container {
   }
 
   method get_transition_type is also<get-transition-type> {
-    HdyDeckTransitionType( hdy_deck_get_transition_type($!hd) );
+    HdyDeckTransitionTypeEnum( hdy_deck_get_transition_type($!hd) );
   }
 
   method get_visible_child ( :$raw = False ) is also<get-visible-child> {
