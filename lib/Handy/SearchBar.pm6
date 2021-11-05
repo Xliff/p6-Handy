@@ -7,6 +7,9 @@ use Handy::Raw::SearchBar;
 
 use GTK::Bin;
 
+our subset HdySearchBarAncestry is export of Mu
+  where HdySearchBar | GtkBinAncestry;
+
 class Handy::SearchBar is GTK::Bin {
   has HdySearchBar $!hsb is implementor;
 
@@ -16,14 +19,13 @@ class Handy::SearchBar is GTK::Bin {
 
   method Handy::Raw::Definitions::HdySearchBar
     is also<HdySearchBar>
-    is also<HdySearchBar>
-  { $!hk }
+  { $!hsb }
 
   method setHdySearchBar (HdySearchBarAncestry $_) {
     return unless $_;
 
     my $to-parent;
-    $!hk = do {
+    $!hsb = do {
       when HdySearchBar {
         $to-parent = cast(GtkBin, $_);
         $_;
@@ -82,7 +84,9 @@ class Handy::SearchBar is GTK::Bin {
     hdy_search_bar_set_search_mode($!hsb, $s);
   }
 
-  method set_show_close_button (Int() $visible) is also<set-show-close-button> {
+  method set_show_close_button (Int() $visible)
+    is also<set-show-close-button>
+  {
     my gboolean $v = $visible.so.Int;
 
     hdy_search_bar_set_show_close_button($!hsb, $v);
