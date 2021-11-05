@@ -6,6 +6,7 @@ use Handy::Raw::Types;
 use Handy::Raw::Squeezer;
 
 use GTK::Container;
+use GTK::Widget;
 
 our subset HdySqueezerAncestry is export of Mu
   where HdySqueezer | GtkContainerAncestry;
@@ -79,7 +80,7 @@ class Handy::Squeezer is GTK::Container {
     propReturnObject(
       hdy_squeezer_get_visible_child($!hs),
       $raw,
-      |self.getTypePair
+      |GTK::Widget.getTypePair
     );
   }
 
