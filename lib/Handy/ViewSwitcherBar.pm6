@@ -7,7 +7,7 @@ use Handy::Raw::ViewSwitcherBar;
 
 use GTK::Bin;
 
-class HdyViewSwitcherBarAncestry is export of Mu
+our subset HdyViewSwitcherBarAncestry is export of Mu
   where HdyViewSwitcherBar | GtkBinAncestry;
 
 class Handy::ViewSwitcherBar is GTK::Bin {
