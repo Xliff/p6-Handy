@@ -21,7 +21,7 @@ class Handy::Carousel is GTK::EventBox {
     self.setGtkEventBox($carousel) if $carousel;
   }
 
-  method setHdyCarousel (HdyCarouselAncestry $_) {\
+  method setHdyCarousel (HdyCarouselAncestry $_) {
     my $to-parent;
 
     $!hc = do {
