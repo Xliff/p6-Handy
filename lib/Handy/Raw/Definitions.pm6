@@ -46,5 +46,7 @@ class HdyViewSwitcherBar        is repr<CPointer> does GLib::Roles::Pointers is 
 class HdyViewSwitcherTitle      is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyWindowHandle           is repr<CPointer> does GLib::Roles::Pointers is export { }
 
+class HdyHeaderGroup            is repr<CPointer> does GLib::Roles::Pointers is export { }
+
 # Roles
 class HdySwipeable         is repr<CPointer> does GLib::Roles::Pointers is export { }
