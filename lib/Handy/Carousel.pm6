@@ -17,8 +17,8 @@ class Handy::Carousel is GTK::EventBox {
 
   has HdyCarousel $!hc is implementor;
 
-  submethod BUILD( :$carousel ) {
-    self.setGtkEventBox($carousel) if $carousel;
+  submethod BUILD( :$handy-carousel ) {
+    self.setGtkEventBox($handy-carousel) if $handy-carousel;
   }
 
   method setHdyCarousel (HdyCarouselAncestry $_) {
@@ -49,17 +49,17 @@ class Handy::Carousel is GTK::EventBox {
     is also<HdyCarousel>
   { $!hc }
 
-  multi method new (HdyCarouselAncestry $carousel, :$ref = True) {
-    return Nil unless $carousel;
+  multi method new (HdyCarouselAncestry $handy-carousel, :$ref = True) {
+    return Nil unless $handy-carousel;
 
-    my $o = self.bless( :$carousel );
+    my $o = self.bless( :$handy-carousel );
     $o.ref if $ref;
     $o;
   }
   multi method new {
-    my $carousel = hdy_carousel_new();
+    my $handy-carousel = hdy_carousel_new();
 
-    $carousel ?? self.bless( :$carousel ) !! Nil;
+    $handy-carousel ?? self.bless( :$handy-carousel ) !! Nil;
   }
 
   method allow_long_swipes is rw is also<allow-long-swipes> {
