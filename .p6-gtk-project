@@ -1,4 +1,7 @@
 prefix=Handy
 modules=Handy::Raw::Types
+lib=handy
+call_prefix=hdy_
+include-directory=/usr/include/libhandy-1
 backups=backup,bitbucket,google-backup,azure-backup,hut
 build_exclude=
