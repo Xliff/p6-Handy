@@ -1,5 +1,7 @@
 use v6.c;
 
+use Method::Also;
+
 use Handy::Raw::Types;
 use Handy::Raw::PreferenceRow;
 
@@ -32,6 +34,10 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
     self.setGtkListBoxRow($to-parent);
   }
 
+  method Handy::Raw::Definitions::HdyPreferencesRow
+    is also<HandyPreferencesRow>
+  { $!hpr }
+
   multi method new (HdyPreferencesRowAncestry $preferences-row, :$ref = True) {
     return Nil unless $preferences-row;
 
@@ -51,25 +57,25 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
       STORE => -> $, \v { self.set_title(v) }
   }
 
-  method use_underline is rw {
+  method use_underline is rw is also<use-underline> {
     Proxy.new:
       FETCH => -> $     { self.get_use_underline    },
       STORE => -> $, \v { self.set_use_underline(v) };
   }
 
-  method get_title {
+  method get_title is also<get-title> {
     hdy_preferences_row_get_title($!hpr);
   }
 
-  method set_title (Str() $title) {
+  method set_title (Str() $title) is also<set-title> {
     hdy_preferences_row_set_title($!hpr, $title);
   }
 
-  method get_use_underline {
+  method get_use_underline is also<get-use-underline> {
     hdy_preferences_row_get_use_underline($!hpr);
   }
 
-  method set_use_underline (Int() $use_underline) {
+  method set_use_underline (Int() $use_underline) is also<set-use-underline> {
     my gboolean $u = $use_underline.so.Int;
 
     hdy_preferences_row_set_use_underline($!hpr, $u);
