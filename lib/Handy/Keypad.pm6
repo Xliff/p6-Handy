@@ -13,8 +13,8 @@ our subset HdyKeypadAncestry is export of Mu
 class Handy::Keypad is GTK::Bin {
   has HdyKeypad $!hk is implementor;
 
-  submethod BUILD(:$keypad) {
-    self.setHdyKeypad($keypad) if $keypad;
+  submethod BUILD(:$handy-keypad) {
+    self.setHdyKeypad($handy-keypad) if $handy-keypad;
   }
 
   method Handy::Raw::Definitions::HdyKeypad
@@ -39,10 +39,10 @@ class Handy::Keypad is GTK::Bin {
     self.setGtkBin($to-parent);
   }
 
-  multi method new (HdyKeypadAncestry $keypad, :$ref = True) {
-    return Nil unless $keypad;
+  multi method new (HdyKeypadAncestry $handy-keypad, :$ref = True) {
+    return Nil unless $handy-keypad;
 
-    my $o = self.bless( :$keypad );
+    my $o = self.bless( :$handy-keypad );
     $o.ref if $ref;
     $o;
   }
