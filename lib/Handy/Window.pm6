@@ -45,7 +45,6 @@ class Handy::Window is GTK::Window {
     $o.ref if $ref;
     $o;
   }
-
   multi method new {
     my $handy-window = hdy_window_new();
 
