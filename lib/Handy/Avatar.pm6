@@ -39,6 +39,10 @@ class Handy::Avatar is GTK::DrawingArea {
     self.setWidget($to-parent);
   }
 
+  method Handy::Raw::Definitions::HdyAvatar
+    is also<HdyAvatar>
+  { $!ha }
+
   multi method new (HdyAvatarAncestry $handy-avatar, :$ref = True) {
     return Nil unless $handy-avatar;
 
