@@ -16,8 +16,8 @@ our subset HdyAvatarAncestry is export of Mu
 class Handy::Avatar is GTK::DrawingArea {
   has HdyAvatar $!ha is implementor;
 
-  submethod BUILD( :$avatar ) {
-    self.setHandyAvatar($avatar) if $avatar;
+  submethod BUILD( :$handy-avatar ) {
+    self.setHandyAvatar($handy-avatar) if $handy-avatar;
   }
 
   method setHandyAvatar (HdyAvatarAncestry $_)
@@ -39,18 +39,18 @@ class Handy::Avatar is GTK::DrawingArea {
     self.setWidget($to-parent);
   }
 
-  multi method new (HdyAvatarAncestry $avatar, :$ref = True) {
-    return Nil unless $avatar;
+  multi method new (HdyAvatarAncestry $handy-avatar, :$ref = True) {
+    return Nil unless $handy-avatar;
 
-    my $o = self.bless( :$avatar );
+    my $o = self.bless( :$handy-avatar );
     $o.ref if $ref;
     $o;
   }
   multi method new (Str() $text, Int() $show_initials) {
-    my gboolean $s      = $show_initials.so.Int;
-    my          $avatar = hdy_avatar_new($!ha, $text, $show_initials);
+    my gboolean $s            = $show_initials.so.Int;
+    my          $handy-avatar = hdy_avatar_new($!ha, $text, $show_initials);
 
-    $avatar ?? self.bless( :$avatar ) !! Nil;
+    $handy-avatar ?? self.bless( :$handy-avatar ) !! Nil;
   }
 
   method icon_name is rw is also<icon-name> {
