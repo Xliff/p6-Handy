@@ -23,6 +23,7 @@ class HdyPreferencesRow         is repr<CPointer> does GLib::Roles::Pointers is 
 class HdyPreferencesWindow      is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdySearchBar              is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyWindow                 is repr<CPointer> does GLib::Roles::Pointers is export { }
+class HdyStyleManager           is repr<CPointer> does GLib::Roles::Pointers is export { }
 
 # Final Types
 class HdyAvatar                 is repr<CPointer> does GLib::Roles::Pointers is export { }
