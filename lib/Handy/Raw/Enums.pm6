@@ -10,6 +10,15 @@ our enum HdyCenteringPolicyEnum is export <
   HDY_CENTERING_POLICY_STRICT
 >;
 
+constant HdyColorScheme is export := guint32;
+our enum HdyColorSchemeEnum is export <
+  HDY_COLOR_SCHEME_DEFAULT
+  HDY_COLOR_SCHEME_FORCE_LIGHT
+  HDY_COLOR_SCHEME_PREFER_LIGHT
+  HDY_COLOR_SCHEME_PREFER_DARK
+  HDY_COLOR_SCHEME_FORCE_DARK
+>;
+
 constant HdyDeckTransitionType is export := guint32;
 our enum HdyDeckTransitionTypeEnum is export <
   HDY_DECK_TRANSITION_TYPE_OVER
