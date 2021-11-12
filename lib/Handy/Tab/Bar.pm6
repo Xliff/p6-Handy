@@ -7,13 +7,14 @@ use Handy::Raw::TabBar;
 
 use GTK::Bin;
 use GTK::Widget;
+use Handy::Tab::View;
 
 use Handy::Roles::Signals::TabBar;
 
 our subset HdyTabBarAncestry is export of Mu
   where HdyTabBar | GtkBinAncestry;
 
-class Handy::TabBar is GTK::Bin {
+class Handy::Tab::Bar is GTK::Bin {
     also does Handy::Roles::Signals::TabBar;
 
     has HdyTabBar $!htb;
@@ -158,7 +159,7 @@ class Handy::TabBar is GTK::Bin {
       propReturnObject(
         hdy_tab_bar_get_view($!htb),
         $raw,
-        |Handy::TabView.getTypePair
+        |Handy::Tab::View.getTypePair
       );
     }
 
