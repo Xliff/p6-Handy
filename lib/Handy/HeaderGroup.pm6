@@ -10,6 +10,7 @@ use GTK::HeaderBar;
 use Handy::HeaderBar;
 
 use GLib::Roles::Object;
+use GLib::Roles::Signals::Generic;
 
 class Handy::HeaderGroup::Child { ... }
 
@@ -18,6 +19,7 @@ our subset HdyHeaderGroupAncestry is export of Mu
 
 class Handy::HeaderGroup {
   also does GLib::Roles::Object;
+  also does GLib::Roles::Signals::Generic;
 
   has HdyHeaderGroup $!hhg;
 
@@ -63,6 +65,12 @@ class Handy::HeaderGroup {
     Proxy.new:
       FETCH => -> $     { self.get_decorate_all    },
       STORE => -> $, \v { self.set_decorate_all(v) }
+  }
+
+  # Is originally:
+  # HdyHeaderGroup, gpointer --> void
+  method update-decoration-layouts {
+    self.connect($!hhg, 'update-decoration-layouts');
   }
 
   method add_gtk_header_bar (GtkHeaderBar() $header_bar)
