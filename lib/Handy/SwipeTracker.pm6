@@ -7,6 +7,7 @@ use Handy::Raw::SwipeTracker;
 
 use GLib::Roles::Object;
 use GTK::Roles::Orientable;
+use Handy::Roles::Signals::SwipeTracker;
 
 our subset HdySwipeTrackerAncestry is export of Mu
   where HdySwipeTracker | GtkOrientable | GObject;
@@ -14,18 +15,19 @@ our subset HdySwipeTrackerAncestry is export of Mu
 class Handy::SwipeTracker {
   also does GLib::Roles::Object;
   also does GTK::Roles::Orientable;
+  also does Handy::Roles::Signals::SwipeTracker;
 
   has HdySwipeTracker $!hst;
 
-  submethod BUILD ( :$handy-header-group ) {
-    self.setHdyHeaderGroup($handy-header-group) if $handy-header-group;
+  submethod BUILD ( :$handy-swipe-tracker ) {
+    self.setHdySwipeTracker($handy-swipe-tracker) if $handy-swipe-tracker;
   }
 
-  method setHdyHeaderGroup (HdyHeaderGroupAncestry $_) {
+  method setHdySwipeTracker (HdySwipeTrackerAncestry $_) {
     my $to-parent;
 
-    $!hhg = do {
-      when HdyHeaderGroup {
+    $!hst = do {
+      when HdySwipeTracker {
         $to-parent = cast(GObject, $_);
         $_;
       }
@@ -33,31 +35,34 @@ class Handy::SwipeTracker {
       when GtkOrientable {
         $to-parent = cast(GObject, $_);
         $!or       = $_;
-        cast(HdyHeaderGroup, $_);
+        cast(HdySwipeTracker, $_);
       }
 
       default {
         $to-parent = $_;
-        cast(HdyHeaderGroup, $_);
+        cast(HdySwipeTracker, $_);
       }
     }
     self.roleInit-GtkOrientable;
     self!setObject($to-parent);
   }
 
-  method Handy::Raw::HdyHeaderGroup
-    is also<HdyHeaderGroup>
-  { $!hhg }
+  method Handy::Raw::HdySwipeTracker
+    is also<HdySwipeTracker>
+  { $!hst }
 
-  multi method new (HdyHeaderGroupAncestry $handy-header-group, :$ref = True) {
-    return Nil unless $handy-header-group;
+  multi method new (
+    HdySwipeTrackerAncestry $handy-swipe-tracker,
+                            :$ref                 = True
+  ) {
+    return Nil unless $handy-swipe-tracker;
 
-    my $o = self.bless( :$handy-header-group );
+    my $o = self.bless( :$handy-swipe-tracker );
     $o.ref if $ref;
     $o;
   }
-  multi method new {
-    my $handy-swipe-tracker = hdy_swipe_tracker_new();
+  multi method new (HdySwipeable() $swipeable) {
+    my $handy-swipe-tracker = hdy_swipe_tracker_new($swipeable);
 
     $handy-swipe-tracker ?? self.bless( :$handy-swipe-tracker ) !! Nil;
   }
@@ -84,6 +89,24 @@ class Handy::SwipeTracker {
     Proxy.new:
       FETCH => -> $     { self.get_reversed    },
       STORE => -> $, \v { self.set_reversed(v) }
+  }
+
+  # Is originally:
+  # HdySwipeTracker, HdyNavigationDirection, gboolean, gpointer --> void
+  method begin-swipe {
+    self.connect-begin-swipe($!hst);
+  }
+
+  # Is originally:
+  # HdySwipeTracker, gint64, gdouble, gpointer --> void
+  method end-swipe {
+    self.connect-end-swipe($!hst);
+  }
+
+  # Is originally:
+  # gpointer, gdouble, gpointer --> void
+  method update-swipe {
+    self.connect-double($!hst, 'update-swipe');
   }
 
   method get_allow_long_swipes is also<get-allow-long-swipes> {
