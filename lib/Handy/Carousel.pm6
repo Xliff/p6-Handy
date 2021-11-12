@@ -9,11 +9,14 @@ use GTK::EventBox;
 
 use Handy::Roles::Swipeable;
 
+use GLib::Roles::Signals::Generic;
+
 our subset HdyCarouselAncestry is export of Mu
   where HdyCarousel | HdySwipeable | GtkEventBoxAncestry;
 
 class Handy::Carousel is GTK::EventBox {
   also does Handy::Roles::Swipeable;
+  also does GLib::Roles::Signals::Generic;
 
   has HdyCarousel $!hc is implementor;
 
@@ -100,6 +103,12 @@ class Handy::Carousel is GTK::EventBox {
       STORE => -> $, \v { self.set_spacing(v) }
   }
 
+  # Is originally:
+  # HdyCarousel, guint, gpointer --> void
+  method page-changed is also<page_changed> {
+    self.connect-uint($!hc, 'page-changed');
+  }
+
   multi method get_property (
     Str() $name where * eq <
       allow-long-swipes
@@ -150,12 +159,6 @@ class Handy::Carousel is GTK::EventBox {
     my $v = GLib::Value.new(G_TYPE_BOOLEAN);
 
     samewith($name, $v);
-  }
-
-  # Is originally:
-  # HdyCarousel, guint, gpointer --> void
-  method page-changed is also<page_changed> {
-    self.connect-uint('page-changed', $!hc);
   }
 
   method get_allow_long_swipes is also<get-allow-long-swipes> {
