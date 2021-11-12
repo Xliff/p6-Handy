@@ -40,6 +40,7 @@ class HdySwipeGroup             is repr<CPointer> does GLib::Roles::Pointers is 
 class HdySwipeTracker           is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyTabBar                 is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyTabPage                is repr<CPointer> does GLib::Roles::Pointers is export { }
+class HdyTabView                is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyTitleBar               is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyValueObject            is repr<CPointer> does GLib::Roles::Pointers is export { }
 class HdyViewSwitcher           is repr<CPointer> does GLib::Roles::Pointers is export { }
