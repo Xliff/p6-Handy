@@ -10,7 +10,11 @@ use Handy::PreferencesRow;
 our subset HdyActionRowAncestry is export of Mu
   where HdyActionRow | HdyPreferencesRowAncestry;
 
+use GLib::Roles::Signals::Generic;
+
 class Handy::ActionRow is Handy::PreferencesRow {
+  also does GLib::Roles::Signals::Generic;
+
   has HdyActionRow $!har is implementor;
 
   submethod BUILD ( :$handy-action-row ) {
@@ -85,6 +89,12 @@ class Handy::ActionRow is Handy::PreferencesRow {
     Proxy.new:
       FETCH => -> $     { self.get_use_underline    },
       STORE => -> $, \v { self.set_use_underline(v) }
+  }
+
+  # Is originally:
+  # HdyActionRow, gpointer --> void
+  method activated {
+    self.connect($!har, 'activated');
   }
 
   method activate {
