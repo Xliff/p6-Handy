@@ -35,7 +35,7 @@ class Handy::PreferencesRow is GTK::ListBoxRow {
   }
 
   method Handy::Raw::Definitions::HdyPreferencesRow
-    is also<HandyPreferencesRow>
+    is also<HdyPreferencesRow>
   { $!hpr }
 
   multi method new (HdyPreferencesRowAncestry $preferences-row, :$ref = True) {
