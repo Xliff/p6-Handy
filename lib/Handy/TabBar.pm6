@@ -8,10 +8,14 @@ use Handy::Raw::TabBar;
 use GTK::Bin;
 use GTK::Widget;
 
+use Handy::Roles::Signals::TabBar;
+
 our subset HdyTabBarAncestry is export of Mu
   where HdyTabBar | GtkBinAncestry;
 
-  class Handy::TabBar is GTK::Bin {
+class Handy::TabBar is GTK::Bin {
+    also does Handy::Roles::Signals::TabBar;
+
     has HdyTabBar $!htb;
 
     submethod BUILD(:$handy-tab-bar) {
@@ -92,6 +96,12 @@ our subset HdyTabBarAncestry is export of Mu
       Proxy.new:
         FETCH => -> $     { self.get_view    },
         STORE => -> $, \v { self.set_view(v) }
+    }
+
+    # Is originally:
+    # HdyTabBar, HdyTabPage, GdkDragContext, GtkSelectionData, guint, guint, gpointer --> void
+    method extra-drag-data-received {
+      self.connect-extra-drag-data-received($!htb);
     }
 
     method get_autohide is also<get-autohide> {
