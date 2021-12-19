@@ -1,6 +1,7 @@
 use v6.c;
 
 use Method::Also;
+use NativeCall;
 
 use Handy::Raw::Types;
 use Handy::Raw::PreferencesWindow;
@@ -10,7 +11,7 @@ use Handy::Window;
 our subset HdyPreferencesWindowAncestry is export of Mu
   where HdyPreferencesWindow | HdyWindowAncestry;
 
-class Handy::Preferences::Windows is Handy::window {
+class Handy::Preferences::Windows is Handy::Window {
   has HdyPreferencesWindow $!hpw is implementor;
 
   submethod BUILD(:$handy-prefs-window) {
@@ -49,7 +50,7 @@ class Handy::Preferences::Windows is Handy::window {
     $o.ref if $ref;
     $o;
   }
-  method new {
+  multi method new {
     my $handy-prefs-window = hdy_preferences_window_new();
 
     $handy-prefs-window ?? self.bless( :$handy-prefs-window ) !! Nil;
