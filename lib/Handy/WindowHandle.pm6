@@ -1,10 +1,15 @@
 use v6.c;
 
+use Method::Also;
+
 use NativeCall;
 
 use Handy::Raw::Types;
 
 use GTK::EventBox;
+
+our subset HdyWindowHandleAncestry is export of Mu
+  where HdyWindowHandle | GtkEventBoxAncestry;
 
 class Handy::WindowHandle is GTK::EventBox {
   has HdyWindowHandle $!hwh;
@@ -16,16 +21,10 @@ class Handy::WindowHandle is GTK::EventBox {
   method setHdyWindowHandle (HdyWindowHandleAncestry $_) {
     my $to-parent;
 
-    $!hc = do {
+    $!hwh = do {
       when HdyWindowHandle  {
         $to-parent = cast(GtkEventBox, $_);
         $_;
-      }
-
-      when HdySwipeable {
-        $to-parent = cast(GtkEventBox, $_);
-        $!hs = $_;
-        cast(HdyWindowHandle, $_);
       }
 
       default {
@@ -39,7 +38,7 @@ class Handy::WindowHandle is GTK::EventBox {
 
   method GTK::Raw::Definitions::HdyWindowHandle
     is also<HdyWindowHandle>
-  { $!hc }
+  { $!hwh }
 
   multi method new (
     HdyWindowHandleAncestry $handy-window-handle,
