@@ -1,11 +1,11 @@
 Dependency Generation
 =====================
-real 1.25
-user 1.89
-sys 0.08
+real 1.26
+user 1.80
+sys 0.07
  === ATK::Raw::Definitions === (1/129)
 Stage start      :   0.000
-Stage parse      :   1.818
+Stage parse      :   1.760
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
@@ -14,88 +14,88 @@ Stage mbc        :   0.001
 Stage moar       :   0.000
  === ATK::Raw::Enums === (2/129)
 Stage start      :   0.000
-Stage parse      :   1.578
+Stage parse      :   1.563
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
-Stage mast       :   0.003
+Stage mast       :   0.004
 Stage mbc        :   0.002
 Stage moar       :   0.000
  === ATK::Raw::Exports === (3/129)
 Stage start      :   0.000
-Stage parse      :   1.356
+Stage parse      :   1.391
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
-Stage mast       :   0.006
+Stage mast       :   0.007
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === ATK::Raw::Structs === (4/129)
 Stage start      :   0.000
-Stage parse      :   1.854
+Stage parse      :   1.940
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === Cairo === (5/129)
 Stage start      :   0.000
-Stage parse      :   1.572
+Stage parse      :   1.684
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
-Stage mast       :   0.003
-Stage mbc        :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === GDK::Display === (6/129)
 Stage start      :   0.000
-Stage parse      :   2.465
+Stage parse      :   2.610
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.003
+Stage mast       :   0.002
+Stage mbc        :   0.005
 Stage moar       :   0.000
  === GDK::Pixbuf === (7/129)
 Stage start      :   0.000
-Stage parse      :   2.446
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.004
-Stage moar       :   0.000
- === GDK::Raw::Definitions === (8/129)
-Stage start      :   0.000
-Stage parse      :   1.619
+Stage parse      :   2.793
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === GDK::Raw::Definitions === (8/129)
+Stage start      :   0.000
+Stage parse      :   1.867
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === GDK::Raw::Enums === (9/129)
 Stage start      :   0.000
-Stage parse      :   1.611
+Stage parse      :   1.824
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.004
-Stage mast       :   0.011
-Stage mbc        :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.003
 Stage moar       :   0.000
  === GDK::Raw::Exports === (10/129)
 Stage start      :   0.000
-Stage parse      :   1.372
+Stage parse      :   1.576
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
-Stage mast       :   0.006
+Stage mast       :   0.007
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === GDK::Raw::Structs === (11/129)
 Stage start      :   0.000
-Stage parse      :   1.671
+Stage parse      :   2.067
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
@@ -104,772 +104,158 @@ Stage mbc        :   0.001
 Stage moar       :   0.000
  === GDK::Raw::Subs === (12/129)
 Stage start      :   0.000
-Stage parse      :   1.624
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GIO::DBus::Raw::Types === (13/129)
-Stage start      :   0.000
-Stage parse      :   1.858
+Stage parse      :   2.122
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.003
-Stage mbc        :   0.002
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === GIO::DBus::Raw::Types === (13/129)
+Stage start      :   0.000
+Stage parse      :   2.365
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.003
 Stage moar       :   0.000
  === GIO::MenuModel === (14/129)
 Stage start      :   0.000
-Stage parse      :   2.274
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.003
-Stage moar       :   0.000
- === GIO::Raw::Definitions === (15/129)
-Stage start      :   0.000
-Stage parse      :   1.580
+Stage parse      :   2.870
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.005
 Stage moar       :   0.000
- === GIO::Raw::Enums === (16/129)
+ === GIO::Raw::Definitions === (15/129)
 Stage start      :   0.000
-Stage parse      :   1.616
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.003
-Stage mast       :   0.003
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === GIO::Raw::Exports === (17/129)
-Stage start      :   0.000
-Stage parse      :   1.381
+Stage parse      :   1.961
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
-Stage mast       :   0.006
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GIO::Raw::Enums === (16/129)
+Stage start      :   0.000
+Stage parse      :   1.982
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.009
+Stage mast       :   0.005
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === GIO::Raw::Exports === (17/129)
+Stage start      :   0.000
+Stage parse      :   1.675
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.008
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === GIO::Raw::Quarks === (18/129)
 Stage start      :   0.000
-Stage parse      :   1.879
+Stage parse      :   2.208
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.001
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === GIO::Raw::Structs === (19/129)
 Stage start      :   0.000
-Stage parse      :   1.852
+Stage parse      :   2.268
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === GIO::Raw::Subs === (20/129)
 Stage start      :   0.000
-Stage parse      :   1.838
+Stage parse      :   2.034
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
+Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.002
 Stage moar       :   0.000
  === GIO::Roles::Icon === (21/129)
 Stage start      :   0.000
-Stage parse      :   2.278
+Stage parse      :   2.330
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.000
 Stage mast       :   0.001
-Stage mbc        :   0.004
+Stage mbc        :   0.003
 Stage moar       :   0.000
  === GIO::Roles::ListModel === (22/129)
 Stage start      :   0.000
-
-    precomp ../p6-GIO/lib/GIO/Roles/ListModel.pm6
-    Stage start      :   0.000
-    
-        precomp ../p6-GIO/lib/GIO/Raw/ListModel.pm6
-        Stage start      :   0.000
-        Stage parse      :   2.388
-        Stage syntaxcheck:   0.000
-        Stage ast        :   0.000
-        Stage optimize   :   0.009
-        Stage mast       :   0.029
-        Stage mbc        :   0.009
-    
-        precomp ../p6-GIO/lib/GIO/Roles/Signals/ListModel.pm6
-        Stage start      :   0.000
-        Stage parse      :   2.388
-        Stage syntaxcheck:   0.000
-        Stage ast        :   0.000
-        Stage optimize   :   0.011
-        Stage mast       :   0.023
-        Stage mbc        :   0.008
-    Stage parse      :   7.927
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.019
-    Stage mast       :   0.037
-    Stage mbc        :   0.009
-R: GLib::Roles::Object
-Stage parse      :  10.088
+Stage parse      :   2.290
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === GIO::Roles::LoadableIcon === (23/129)
+Stage start      :   0.000
+Stage parse      :   2.373
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.000
 Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
-R: GIO::Roles::ListModel
- === GIO::Roles::LoadableIcon === (23/129)
-Stage start      :   0.000
-
-    precomp ../p6-GIO/lib/GIO/Roles/LoadableIcon.pm6
-    Stage start      :   0.000
-    Stage parse      :   3.025
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.029
-    Stage mast       :   0.041
-    Stage mbc        :   0.013
-Stage parse      :   5.149
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.003
 Stage moar       :   0.000
  === GLib::GList === (24/129)
 Stage start      :   0.000
-Stage parse      :   1.876
+Stage parse      :   1.966
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.002
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.003
 Stage moar       :   0.000
  === GLib::Raw::Definitions === (25/129)
 Stage start      :   0.000
-Stage parse      :   1.573
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::Enums === (26/129)
-Stage start      :   0.000
 Stage parse      :   1.671
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.005
-Stage mast       :   0.006
-Stage mbc        :   0.003
-Stage moar       :   0.000
- === GLib::Raw::Exceptions === (27/129)
-Stage start      :   0.000
-Stage parse      :   1.359
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.002
-Stage mast       :   0.012
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::Exports === (28/129)
-Stage start      :   0.000
-Stage parse      :   1.416
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.001
-Stage mbc        :   0.000
-Stage moar       :   0.000
- === GLib::Raw::Object === (29/129)
-Stage start      :   0.000
-Stage parse      :   1.714
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::ReturnedValue === (30/129)
-Stage start      :   0.000
-Stage parse      :   1.336
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.002
-Stage mast       :   0.006
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::Struct_Subs === (31/129)
-Stage start      :   0.000
-Stage parse      :   1.566
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::Structs === (32/129)
-Stage start      :   0.000
-Stage parse      :   1.819
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Raw::Subs === (33/129)
-Stage start      :   0.000
-Stage parse      :   1.799
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Roles::Object === (34/129)
-Stage start      :   0.000
-Stage parse      :   2.004
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === GLib::Roles::Pointers === (35/129)
-Stage start      :   0.000
-Stage parse      :   1.567
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Roles::Signals::Generic === (36/129)
-Stage start      :   0.000
-Stage parse      :   1.848
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GLib::Roles::StaticClass === (37/129)
-Stage start      :   0.000
-Stage parse      :   1.837
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GTK::ApplicationWindow === (38/129)
-Stage start      :   0.000
-Stage parse      :   4.004
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.006
-Stage moar       :   0.000
- === GTK::Bin === (39/129)
-Stage start      :   0.000
-Stage parse      :   3.788
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.008
-Stage moar       :   0.000
- === GTK::Container === (40/129)
-Stage start      :   0.000
-Stage parse      :   3.707
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.008
-Stage moar       :   0.000
- === GTK::DrawingArea === (41/129)
-Stage start      :   0.000
-Stage parse      :   3.627
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.005
-Stage mbc        :   0.005
-Stage moar       :   0.000
- === GTK::EventBox === (42/129)
-Stage start      :   0.000
-Stage parse      :   3.784
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.004
-Stage mbc        :   0.006
-Stage moar       :   0.000
- === GTK::HeaderBar === (43/129)
-Stage start      :   0.000
-Stage parse      :   3.805
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.006
-Stage moar       :   0.000
- === GTK::ListBoxRow === (44/129)
-Stage start      :   0.000
-Stage parse      :   3.901
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.006
-Stage moar       :   0.000
- === GTK::Raw::Definitions === (45/129)
-Stage start      :   0.000
-Stage parse      :   1.577
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
 Stage mast       :   0.003
 Stage mbc        :   0.001
 Stage moar       :   0.000
- === GTK::Raw::Enums === (46/129)
+ === GLib::Raw::Enums === (26/129)
 Stage start      :   0.000
-Stage parse      :   1.603
+Stage parse      :   1.733
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.005
-Stage mast       :   0.006
-Stage mbc        :   0.003
+Stage optimize   :   0.006
+Stage mast       :   0.007
+Stage mbc        :   0.004
 Stage moar       :   0.000
- === GTK::Raw::Exports === (47/129)
+ === GLib::Raw::Exceptions === (27/129)
 Stage start      :   0.000
-Stage parse      :   1.373
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.002
-Stage mast       :   0.006
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === GTK::Raw::Requisition === (48/129)
-Stage start      :   0.000
-Stage parse      :   2.056
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === GTK::Raw::Structs === (49/129)
-Stage start      :   0.000
-Stage parse      :   2.042
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === GTK::Raw::Subs === (50/129)
-Stage start      :   0.000
-Stage parse      :   1.608
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.001
-Stage mbc        :   0.009
-Stage moar       :   0.000
- === GTK::Roles::Orientable === (51/129)
-Stage start      :   0.000
-Stage parse      :   2.389
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.006
-Stage moar       :   0.000
- === GTK::Stack === (52/129)
-Stage start      :   0.000
-Stage parse      :   4.018
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.009
-Stage moar       :   0.000
- === GTK::Widget === (53/129)
-Stage start      :   0.000
-Stage parse      :   3.525
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.005
-Stage moar       :   0.000
- === GTK::Window === (54/129)
-Stage start      :   0.000
-Stage parse      :   3.883
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.008
-Stage moar       :   0.000
- === Method::Also === (55/129)
-Stage start      :   0.000
-Stage parse      :   1.334
+Stage parse      :   1.403
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
 Stage mast       :   0.006
 Stage mbc        :   0.001
 Stage moar       :   0.000
- === NativeCall === (56/129)
+ === GLib::Raw::Exports === (28/129)
 Stage start      :   0.000
-Stage parse      :   1.512
+Stage parse      :   1.458
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage mbc        :   0.000
 Stage moar       :   0.000
- === Pango::Raw::Definitions === (57/129)
-Stage start      :   0.000
-Stage parse      :   1.633
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Pango::Raw::Enums === (58/129)
-Stage start      :   0.000
-Stage parse      :   1.656
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Pango::Raw::Exports === (59/129)
-Stage start      :   0.000
-Stage parse      :   1.356
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.002
-Stage mast       :   0.006
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Pango::Raw::Structs === (60/129)
-Stage start      :   0.000
-Stage parse      :   1.861
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Pango::Raw::Subs === (61/129)
-Stage start      :   0.000
-Stage parse      :   1.880
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Definitions === (62/129)
-Stage start      :   0.000
-Stage parse      :   1.570
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Main === (63/129)
-Stage start      :   0.000
-
-    precomp lib/Handy/Main.pm6
-    Stage start      :   0.000
-    Stage parse      :   2.065
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.003
-    Stage mast       :   0.019
-    Stage mbc        :   0.003
-Stage parse      :   4.065
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::ActionRow === (64/129)
-Stage start      :   0.000
-Stage parse      :   1.634
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Avatar === (65/129)
-Stage start      :   0.000
-Stage parse      :   1.692
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.009
-Stage moar       :   0.000
- === Handy::Raw::Carousel === (66/129)
-Stage start      :   0.000
-Stage parse      :   1.632
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::ComboRow === (67/129)
-Stage start      :   0.000
-Stage parse      :   1.650
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Enums === (68/129)
-Stage start      :   0.000
-Stage parse      :   1.595
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Deck === (69/129)
-Stage start      :   0.000
-Stage parse      :   1.680
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.008
-Stage moar       :   0.000
- === Handy::Raw::ExpanderRow === (70/129)
-Stage start      :   0.000
-Stage parse      :   1.644
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Flap === (71/129)
-Stage start      :   0.000
-Stage parse      :   1.658
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === Handy::Raw::HeaderBar === (72/129)
-Stage start      :   0.000
-Stage parse      :   1.654
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::HeaderGroup === (73/129)
-Stage start      :   0.000
-
-    precomp lib/Handy/Raw/HeaderGroup.pm6
-    Stage start      :   0.000
-    Stage parse      :   2.325
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.010
-    Stage mast       :   0.019
-    Stage mbc        :   0.071
-Stage parse      :   4.400
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Keypad === (74/129)
-Stage start      :   0.000
-Stage parse      :   1.630
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.001
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Leaflet === (75/129)
-Stage start      :   0.000
-Stage parse      :   1.672
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::PreferenceRow === (76/129)
-Stage start      :   0.000
-Stage parse      :   1.617
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::PreferencesWindow === (77/129)
-Stage start      :   0.000
-Stage parse      :   1.636
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::SearchBar === (78/129)
-Stage start      :   0.000
-Stage parse      :   1.720
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.001
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Squeezer === (79/129)
-Stage start      :   0.000
-Stage parse      :   1.661
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::StatusPage === (80/129)
-Stage start      :   0.000
-Stage parse      :   1.615
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::StyleManager === (81/129)
-Stage start      :   0.000
-Stage parse      :   1.698
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::SwipeTracker === (82/129)
-Stage start      :   0.000
-Stage parse      :   1.611
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Swipeable === (83/129)
-Stage start      :   0.000
-Stage parse      :   1.697
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::TabBar === (84/129)
-Stage start      :   0.000
-Stage parse      :   1.638
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::TabView === (85/129)
-Stage start      :   0.000
-Stage parse      :   1.638
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.002
-Stage moar       :   0.000
- === Handy::Raw::Exports === (86/129)
-Stage start      :   0.000
-Stage parse      :   1.336
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.002
-Stage mast       :   0.006
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::Types === (87/129)
-Stage start      :   0.000
-
-    precomp lib/Handy/Raw/Types.pm6
-    Stage start      :   0.000
-    Stage parse      :   3.438
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.003
-    Stage mast       :   0.020
-    Stage mbc        :   0.005
-Stage parse      :   5.208
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.015
-Stage mast       :   0.044
-Stage mbc        :   0.015
-Stage moar       :   0.000
- === Handy::Raw::ViewSwitcher === (88/129)
-Stage start      :   0.000
-Stage parse      :   1.690
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.001
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::ViewSwitcherBar === (89/129)
-Stage start      :   0.000
-Stage parse      :   1.632
-Stage syntaxcheck:   0.000
-Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
-Stage moar       :   0.000
- === Handy::Raw::ViewSwitcherTitle === (90/129)
+ === GLib::Raw::Object === (29/129)
 Stage start      :   0.000
 Stage parse      :   1.647
 Stage syntaxcheck:   0.000
@@ -878,187 +264,997 @@ Stage optimize   :   0.001
 Stage mast       :   0.002
 Stage mbc        :   0.001
 Stage moar       :   0.000
- === Handy::Roles::Signals::SwipeTracker === (91/129)
+ === GLib::Raw::ReturnedValue === (30/129)
 Stage start      :   0.000
-
-    precomp lib/Handy/Roles/Signals/SwipeTracker.pm6
-    Stage start      :   0.000
-    Stage parse      :   2.789
-    Stage syntaxcheck:   0.000
-    Stage ast        :   0.000
-    Stage optimize   :   0.026
-    Stage mast       :   0.039
-    Stage mbc        :   0.017
-Stage parse      :   5.036
+Stage parse      :   1.436
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === GLib::Raw::Struct_Subs === (31/129)
+Stage start      :   0.000
+Stage parse      :   1.676
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.007
+Stage moar       :   0.000
+ === GLib::Raw::Structs === (32/129)
+Stage start      :   0.000
+Stage parse      :   1.807
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GLib::Raw::Subs === (33/129)
+Stage start      :   0.000
+Stage parse      :   1.867
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
 Stage mast       :   0.002
 Stage mbc        :   0.001
+Stage moar       :   0.000
+ === GLib::Roles::Object === (34/129)
+Stage start      :   0.000
+Stage parse      :   2.066
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === GLib::Roles::Pointers === (35/129)
+Stage start      :   0.000
+Stage parse      :   1.589
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === GLib::Roles::Signals::Generic === (36/129)
+Stage start      :   0.000
+Stage parse      :   1.790
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.001
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GLib::Roles::StaticClass === (37/129)
+Stage start      :   0.000
+Stage parse      :   1.838
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GTK::ApplicationWindow === (38/129)
+Stage start      :   0.000
+Stage parse      :   4.223
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.007
+Stage moar       :   0.000
+ === GTK::Bin === (39/129)
+Stage start      :   0.000
+Stage parse      :   3.878
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === GTK::Container === (40/129)
+Stage start      :   0.000
+Stage parse      :   3.794
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.009
+Stage moar       :   0.000
+ === GTK::DrawingArea === (41/129)
+Stage start      :   0.000
+Stage parse      :   3.696
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.008
+Stage moar       :   0.000
+ === GTK::EventBox === (42/129)
+Stage start      :   0.000
+Stage parse      :   3.991
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.008
+Stage moar       :   0.000
+ === GTK::HeaderBar === (43/129)
+Stage start      :   0.000
+Stage parse      :   3.921
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.007
+Stage moar       :   0.000
+ === GTK::ListBoxRow === (44/129)
+Stage start      :   0.000
+Stage parse      :   3.946
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.001
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === GTK::Raw::Definitions === (45/129)
+Stage start      :   0.000
+Stage parse      :   1.585
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GTK::Raw::Enums === (46/129)
+Stage start      :   0.000
+Stage parse      :   1.657
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.005
+Stage mast       :   0.007
+Stage mbc        :   0.004
+Stage moar       :   0.000
+ === GTK::Raw::Exports === (47/129)
+Stage start      :   0.000
+Stage parse      :   1.369
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === GTK::Raw::Requisition === (48/129)
+Stage start      :   0.000
+Stage parse      :   2.028
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GTK::Raw::Structs === (49/129)
+Stage start      :   0.000
+Stage parse      :   2.035
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.001
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === GTK::Raw::Subs === (50/129)
+Stage start      :   0.000
+Stage parse      :   1.634
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === GTK::Roles::Orientable === (51/129)
+Stage start      :   0.000
+Stage parse      :   2.413
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.004
+Stage moar       :   0.000
+ === GTK::Stack === (52/129)
+Stage start      :   0.000
+Stage parse      :   4.132
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.009
+Stage moar       :   0.000
+ === GTK::Widget === (53/129)
+Stage start      :   0.000
+Stage parse      :   3.857
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === GTK::Window === (54/129)
+Stage start      :   0.000
+Stage parse      :   4.235
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.001
+Stage mbc        :   0.009
+Stage moar       :   0.000
+ === Method::Also === (55/129)
+Stage start      :   0.000
+Stage parse      :   1.529
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === NativeCall === (56/129)
+Stage start      :   0.000
+Stage parse      :   1.732
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Pango::Raw::Definitions === (57/129)
+Stage start      :   0.000
+Stage parse      :   1.804
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Pango::Raw::Enums === (58/129)
+Stage start      :   0.000
+Stage parse      :   1.928
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === Pango::Raw::Exports === (59/129)
+Stage start      :   0.000
+Stage parse      :   1.678
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Pango::Raw::Structs === (60/129)
+Stage start      :   0.000
+Stage parse      :   2.365
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === Pango::Raw::Subs === (61/129)
+Stage start      :   0.000
+Stage parse      :   2.282
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === Handy::Raw::Definitions === (62/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Definitions.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.237
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.026
+    Stage mbc        :   0.005
+Stage parse      :   4.369
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.009
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === Handy::Main === (63/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Main.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.774
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.004
+    Stage mast       :   0.023
+    Stage mbc        :   0.005
+Stage parse      :   4.934
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::ActionRow === (64/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ActionRow.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.649
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.022
+    Stage mbc        :   0.024
+Stage parse      :   4.574
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Avatar === (65/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Avatar.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.368
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.027
+    Stage mbc        :   0.025
+Stage parse      :   4.126
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Carousel === (66/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Carousel.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.147
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.022
+    Stage mbc        :   0.036
+Stage parse      :   3.778
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::ComboRow === (67/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ComboRow.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.021
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.017
+Stage parse      :   3.595
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Enums === (68/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Enums.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.845
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.019
+    Stage mbc        :   0.011
+Stage parse      :   3.343
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Deck === (69/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Deck.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.409
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.037
+    Stage mbc        :   0.103
+Stage parse      :   4.076
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::ExpanderRow === (70/129)
+Stage start      :   0.001
+
+    precomp lib/Handy/Raw/ExpanderRow.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.990
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.018
+    Stage mbc        :   0.019
+Stage parse      :   3.519
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Flap === (71/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Flap.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.528
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.029
+    Stage mbc        :   0.146
+Stage parse      :   4.242
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::HeaderBar === (72/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/HeaderBar.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.104
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.020
+    Stage mast       :   0.023
+    Stage mbc        :   0.033
+Stage parse      :   3.643
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::HeaderGroup === (73/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/HeaderGroup.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.288
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.021
+    Stage mbc        :   0.022
+Stage parse      :   3.939
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Keypad === (74/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Keypad.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.980
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.018
+    Stage mbc        :   0.019
+Stage parse      :   3.516
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Leaflet === (75/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Leaflet.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.496
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.019
+    Stage mast       :   0.046
+    Stage mbc        :   0.054
+Stage parse      :   4.123
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::PreferenceRow === (76/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/PreferenceRow.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.829
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.012
+    Stage mbc        :   0.008
+Stage parse      :   3.339
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::PreferencesWindow === (77/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/PreferencesWindow.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.860
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.006
+    Stage mast       :   0.013
+    Stage mbc        :   0.011
+Stage parse      :   3.339
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::SearchBar === (78/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/SearchBar.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.018
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.014
+    Stage mbc        :   0.011
+Stage parse      :   3.512
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Squeezer === (79/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Squeezer.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.040
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.019
+    Stage mbc        :   0.022
+Stage parse      :   3.562
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::StatusPage === (80/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/StatusPage.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.789
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.013
+    Stage mbc        :   0.009
+Stage parse      :   3.257
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::StyleManager === (81/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/StyleManager.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.961
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.015
+    Stage mbc        :   0.011
+Stage parse      :   3.470
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::SwipeTracker === (82/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/SwipeTracker.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.864
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.015
+    Stage mbc        :   0.013
+Stage parse      :   3.359
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Swipeable === (83/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Swipeable.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.983
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.022
+    Stage mbc        :   0.010
+Stage parse      :   3.480
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::TabBar === (84/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/TabBar.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.015
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.023
+    Stage mbc        :   0.021
+Stage parse      :   3.546
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::TabView === (85/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/TabView.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.725
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.030
+    Stage mast       :   0.060
+    Stage mbc        :   0.074
+Stage parse      :   4.397
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::Exports === (86/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Exports.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.132
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.005
+    Stage mbc        :   0.002
+Stage parse      :   1.542
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.002
+Stage moar       :   0.000
+ === Handy::Raw::Types === (87/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Types.pm6
+    Stage start      :   0.000
+    Stage parse      :   3.292
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.023
+    Stage mbc        :   0.006
+Stage parse      :   5.014
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.018
+Stage mast       :   0.034
+Stage mbc        :   0.022
+Stage moar       :   0.000
+ === Handy::Raw::ViewSwitcher === (88/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ViewSwitcher.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.014
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.014
+    Stage mbc        :   0.013
+Stage parse      :   3.502
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::ViewSwitcherBar === (89/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ViewSwitcherBar.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.901
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.014
+    Stage mbc        :   0.010
+Stage parse      :   3.420
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Raw::ViewSwitcherTitle === (90/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ViewSwitcherTitle.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.957
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.016
+    Stage mbc        :   0.016
+Stage parse      :   3.440
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === Handy::Roles::Signals::SwipeTracker === (91/129)
+Stage start      :   0.000
+
+    precomp lib/Handy/Roles/Signals/SwipeTracker.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.722
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.029
+    Stage mast       :   0.039
+    Stage mbc        :   0.037
+Stage parse      :   4.475
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.008
 Stage moar       :   0.000
  === Handy::Roles::Signals::Swipeable === (92/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Roles/Signals/Swipeable.pm6
     Stage start      :   0.000
-    Stage parse      :   2.140
+    Stage parse      :   2.096
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.030
+    Stage optimize   :   0.034
     Stage mast       :   0.033
-    Stage mbc        :   0.013
-Stage parse      :   4.410
+    Stage mbc        :   0.023
+Stage parse      :   3.823
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Roles::Signals::Tab::View === (93/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Roles/Signals/Tab/View.pm6
     Stage start      :   0.000
-    Stage parse      :   2.927
+    Stage parse      :   2.794
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.029
-    Stage mast       :   0.038
-    Stage mbc        :   0.023
-Stage parse      :   5.167
+    Stage optimize   :   0.031
+    Stage mast       :   0.060
+    Stage mbc        :   0.044
+Stage parse      :   4.566
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Roles::Signals::TabBar === (94/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Roles/Signals/TabBar.pm6
     Stage start      :   0.000
-    Stage parse      :   2.143
+    Stage parse      :   2.076
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.030
-    Stage mast       :   0.030
-    Stage mbc        :   0.013
-Stage parse      :   4.411
+    Stage optimize   :   0.033
+    Stage mast       :   0.034
+    Stage mbc        :   0.022
+Stage parse      :   3.774
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Roles::Swipeable === (95/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Roles/Swipeable.pm6
     Stage start      :   0.000
-    Stage parse      :   2.484
+    Stage parse      :   1.950
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.030
-    Stage mast       :   0.077
-    Stage mbc        :   0.010
-Stage parse      :   4.755
+    Stage optimize   :   0.029
+    Stage mast       :   0.031
+    Stage mbc        :   0.016
+Stage parse      :   3.681
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::SearchBar === (96/129)
 Stage start      :   0.000
 
     precomp lib/Handy/SearchBar.pm6
     Stage start      :   0.000
-    Stage parse      :   5.710
+    Stage parse      :   5.647
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.030
-    Stage mast       :   0.115
+    Stage mast       :   0.121
     Stage mbc        :   0.027
-Stage parse      :   8.799
+Stage parse      :   8.175
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Squeezer === (97/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Squeezer.pm6
     Stage start      :   0.000
-    Stage parse      :   5.651
+    Stage parse      :   5.599
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.034
-    Stage mast       :   0.115
+    Stage mast       :   0.118
     Stage mbc        :   0.028
-Stage parse      :   8.678
+Stage parse      :   8.076
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::StatusPage === (98/129)
 Stage start      :   0.000
 
     precomp lib/Handy/StatusPage.pm6
     Stage start      :   0.000
-    Stage parse      :   5.630
+    Stage parse      :   5.676
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.029
-    Stage mast       :   0.114
+    Stage mast       :   0.121
     Stage mbc        :   0.026
-Stage parse      :   8.704
+Stage parse      :   8.173
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.003
-Stage mbc        :   0.003
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::StyleManager === (99/129)
 Stage start      :   0.000
 
     precomp lib/Handy/StyleManager.pm6
     Stage start      :   0.000
-    Stage parse      :   3.974
+    Stage parse      :   3.828
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.026
-    Stage mast       :   0.038
-    Stage mbc        :   0.021
+    Stage optimize   :   0.028
+    Stage mast       :   0.039
+    Stage mbc        :   0.041
 R: GLib::Roles::Object
-Stage parse      :   6.392
+Stage parse      :   5.672
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::SwipeTracker === (100/129)
 Stage start      :   0.000
 
     precomp lib/Handy/SwipeTracker.pm6
     Stage start      :   0.000
-    Stage parse      :   4.006
+    Stage parse      :   3.942
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.041
-    Stage mast       :   0.060
-    Stage mbc        :   0.018
+    Stage optimize   :   0.039
+    Stage mast       :   0.080
+    Stage mbc        :   0.080
 R: GLib::Roles::Object
-Stage parse      :   6.444
+Stage parse      :   5.869
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
 R: GTK::Roles::Orientable
 R: Handy::Roles::Signals::SwipeTracker
@@ -1067,18 +1263,18 @@ Stage start      :   0.000
 
     precomp lib/Handy/Tab/Page.pm6
     Stage start      :   0.000
-    Stage parse      :   5.664
+    Stage parse      :   5.665
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.039
-    Stage mast       :   0.118
-    Stage mbc        :   0.030
+    Stage optimize   :   0.044
+    Stage mast       :   0.120
+    Stage mbc        :   0.027
 R: GLib::Roles::Object
-Stage parse      :   8.676
+Stage parse      :   8.176
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === Handy::Tab::View === (102/129)
@@ -1086,50 +1282,50 @@ Stage start      :   0.000
 
     precomp lib/Handy/Tab/View.pm6
     Stage start      :   0.000
-    Stage parse      :   6.355
+    Stage parse      :   6.356
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.049
-    Stage mast       :   0.151
-    Stage mbc        :   0.029
+    Stage optimize   :   0.053
+    Stage mast       :   0.154
+    Stage mbc        :   0.031
 R: Handy::Roles::Signals::Tab::View
-Stage parse      :   9.624
+Stage parse      :   9.056
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::TitleBar === (103/129)
 Stage start      :   0.000
 
     precomp lib/Handy/TitleBar.pm6
     Stage start      :   0.000
-    Stage parse      :   5.730
+    Stage parse      :   5.780
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.028
-    Stage mast       :   0.113
-    Stage mbc        :   0.031
-Stage parse      :   8.786
+    Stage optimize   :   0.035
+    Stage mast       :   0.119
+    Stage mbc        :   0.041
+Stage parse      :   8.276
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ViewSwitcher === (104/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ViewSwitcher.pm6
     Stage start      :   0.000
-    Stage parse      :   6.275
+    Stage parse      :   6.172
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.032
-    Stage mast       :   0.135
-    Stage mbc        :   0.033
-Stage parse      :   9.003
+    Stage mast       :   0.147
+    Stage mbc        :   0.030
+Stage parse      :   8.884
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
@@ -1141,127 +1337,127 @@ Stage start      :   0.000
 
     precomp lib/Handy/ViewSwitcherBar.pm6
     Stage start      :   0.000
-    Stage parse      :   5.749
+    Stage parse      :   5.654
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.032
-    Stage mast       :   0.115
-    Stage mbc        :   0.031
-Stage parse      :   8.787
+    Stage optimize   :   0.030
+    Stage mast       :   0.121
+    Stage mbc        :   0.025
+Stage parse      :   8.124
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ViewSwitcherTitle === (106/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ViewSwitcherTitle.pm6
     Stage start      :   0.000
-    Stage parse      :   5.843
+    Stage parse      :   5.622
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.034
-    Stage mast       :   0.123
-    Stage mbc        :   0.027
-Stage parse      :   8.900
+    Stage mast       :   0.127
+    Stage mbc        :   0.029
+Stage parse      :   8.148
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Window === (107/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Window.pm6
     Stage start      :   0.000
-    Stage parse      :   5.729
+    Stage parse      :   5.853
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.021
-    Stage mast       :   0.120
-    Stage mbc        :   0.032
-Stage parse      :   8.902
+    Stage optimize   :   0.026
+    Stage mast       :   0.128
+    Stage mbc        :   0.033
+Stage parse      :   8.473
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::WindowHandle === (108/129)
 Stage start      :   0.000
 
     precomp lib/Handy/WindowHandle.pm6
     Stage start      :   0.000
-    Stage parse      :   5.703
+    Stage parse      :   5.657
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.025
-    Stage mast       :   0.115
-    Stage mbc        :   0.028
-Stage parse      :   8.774
+    Stage mast       :   0.120
+    Stage mbc        :   0.031
+Stage parse      :   8.208
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
+Stage optimize   :   0.002
 Stage mast       :   0.004
-Stage mbc        :   0.002
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ApplicationWindow === (109/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ApplicationWindow.pm6
     Stage start      :   0.000
-    Stage parse      :   6.039
+    Stage parse      :   5.958
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.020
-    Stage mast       :   0.137
-    Stage mbc        :   0.033
-Stage parse      :   9.303
+    Stage optimize   :   0.026
+    Stage mast       :   0.142
+    Stage mbc        :   0.034
+Stage parse      :   8.675
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Avatar === (110/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Avatar.pm6
     Stage start      :   0.000
-    Stage parse      :   5.669
+    Stage parse      :   5.702
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.040
-    Stage mast       :   0.115
-    Stage mbc        :   0.032
-Stage parse      :   8.686
+    Stage optimize   :   0.036
+    Stage mast       :   0.128
+    Stage mbc        :   0.027
+Stage parse      :   8.174
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Carousel === (111/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Carousel.pm6
     Stage start      :   0.000
-    Stage parse      :   6.012
+    Stage parse      :   5.950
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.040
-    Stage mast       :   0.134
-    Stage mbc        :   0.034
+    Stage optimize   :   0.049
+    Stage mast       :   0.137
+    Stage mbc        :   0.038
 R: Handy::Roles::Swipeable
-Stage parse      :   9.160
+Stage parse      :   8.535
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
 R: GLib::Roles::Signals::Generic
  === Handy::Carousel::IndicatorDots === (112/129)
@@ -1269,17 +1465,17 @@ Stage start      :   0.000
 
     precomp lib/Handy/Carousel/IndicatorDots.pm6
     Stage start      :   0.000
-    Stage parse      :   5.774
+    Stage parse      :   5.908
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.028
-    Stage mast       :   0.123
-    Stage mbc        :   0.029
-Stage parse      :   8.976
+    Stage optimize   :   0.038
+    Stage mast       :   0.129
+    Stage mbc        :   0.047
+Stage parse      :   8.529
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.005
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === Handy::Carousel::IndicatorLines === (113/129)
@@ -1287,109 +1483,109 @@ Stage start      :   0.000
 
     precomp lib/Handy/Carousel/IndicatorLines.pm6
     Stage start      :   0.000
-    Stage parse      :   5.799
+    Stage parse      :   5.679
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.033
-    Stage mast       :   0.122
-    Stage mbc        :   0.029
-Stage parse      :   9.001
+    Stage optimize   :   0.029
+    Stage mast       :   0.127
+    Stage mbc        :   0.041
+Stage parse      :   8.331
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Clamp === (114/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Clamp.pm6
     Stage start      :   0.000
-    Stage parse      :   5.847
+    Stage parse      :   5.933
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.031
-    Stage mast       :   0.116
-    Stage mbc        :   0.038
-Stage parse      :   8.975
+    Stage mast       :   0.121
+    Stage mbc        :   0.052
+Stage parse      :   8.402
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Deck === (115/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Deck.pm6
     Stage start      :   0.000
-    Stage parse      :   5.720
+    Stage parse      :   5.678
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.047
-    Stage mast       :   0.124
-    Stage mbc        :   0.026
-Stage parse      :   8.760
+    Stage optimize   :   0.046
+    Stage mast       :   0.133
+    Stage mbc        :   0.027
+Stage parse      :   8.166
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Flap === (116/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Flap.pm6
     Stage start      :   0.000
-    Stage parse      :   5.683
+    Stage parse      :   5.639
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.045
-    Stage mast       :   0.126
-    Stage mbc        :   0.031
-Stage parse      :   8.737
+    Stage optimize   :   0.047
+    Stage mast       :   0.137
+    Stage mbc        :   0.027
+Stage parse      :   8.102
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::HeaderBar === (117/129)
 Stage start      :   0.000
 
     precomp lib/Handy/HeaderBar.pm6
     Stage start      :   0.000
-    Stage parse      :   5.734
+    Stage parse      :   5.566
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.041
-    Stage mast       :   0.121
-    Stage mbc        :   0.026
-Stage parse      :   8.749
+    Stage optimize   :   0.045
+    Stage mast       :   0.127
+    Stage mbc        :   0.027
+Stage parse      :   8.017
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::HeaderGroup === (118/129)
 Stage start      :   0.000
 
     precomp lib/Handy/HeaderGroup.pm6
     Stage start      :   0.000
-    Stage parse      :   5.924
+    Stage parse      :   5.926
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.042
-    Stage mast       :   0.128
-    Stage mbc        :   0.027
+    Stage optimize   :   0.049
+    Stage mast       :   0.136
+    Stage mbc        :   0.029
 R: GLib::Roles::Object
-Stage parse      :   9.065
+Stage parse      :   8.509
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
 R: GLib::Roles::Signals::Generic
  === Handy::Keypad === (119/129)
@@ -1397,53 +1593,53 @@ Stage start      :   0.000
 
     precomp lib/Handy/Keypad.pm6
     Stage start      :   0.000
-    Stage parse      :   5.718
+    Stage parse      :   5.690
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.038
-    Stage mast       :   0.123
-    Stage mbc        :   0.032
-Stage parse      :   8.831
+    Stage optimize   :   0.037
+    Stage mast       :   0.132
+    Stage mbc        :   0.028
+Stage parse      :   8.190
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Leaflet === (120/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Leaflet.pm6
     Stage start      :   0.000
-    Stage parse      :   5.727
+    Stage parse      :   5.617
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.045
-    Stage mast       :   0.125
-    Stage mbc        :   0.032
-Stage parse      :   8.778
+    Stage optimize   :   0.051
+    Stage mast       :   0.132
+    Stage mbc        :   0.027
+Stage parse      :   8.103
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::PreferencesGroup === (121/129)
 Stage start      :   0.000
 
     precomp lib/Handy/PreferencesGroup.pm6
     Stage start      :   0.000
-    Stage parse      :   5.759
+    Stage parse      :   5.919
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.030
-    Stage mast       :   0.116
-    Stage mbc        :   0.038
-Stage parse      :   8.814
+    Stage optimize   :   0.031
+    Stage mast       :   0.121
+    Stage mbc        :   0.050
+Stage parse      :   8.423
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === Handy::PreferencesPage === (122/129)
@@ -1451,141 +1647,141 @@ Stage start      :   0.000
 
     precomp lib/Handy/PreferencesPage.pm6
     Stage start      :   0.000
-    Stage parse      :   5.807
+    Stage parse      :   5.759
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.030
-    Stage mast       :   0.115
-    Stage mbc        :   0.038
-Stage parse      :   8.872
+    Stage optimize   :   0.032
+    Stage mast       :   0.121
+    Stage mbc        :   0.053
+Stage parse      :   8.285
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::PreferencesRow === (123/129)
 Stage start      :   0.000
 
     precomp lib/Handy/PreferencesRow.pm6
     Stage start      :   0.000
-    Stage parse      :   5.831
+    Stage parse      :   5.710
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.028
-    Stage mast       :   0.119
-    Stage mbc        :   0.027
-Stage parse      :   8.897
+    Stage mast       :   0.125
+    Stage mbc        :   0.028
+Stage parse      :   8.245
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::PreferencesWindow === (124/129)
 Stage start      :   0.000
 
     precomp lib/Handy/PreferencesWindow.pm6
     Stage start      :   0.000
-    Stage parse      :   3.100
+    Stage parse      :   2.810
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.043
-    Stage mast       :   0.128
-    Stage mbc        :   0.008
-Stage parse      :   6.286
+    Stage optimize   :   0.034
+    Stage mast       :   0.134
+    Stage mbc        :   0.012
+Stage parse      :   5.435
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::Tab::Bar === (125/129)
 Stage start      :   0.000
 
     precomp lib/Handy/Tab/Bar.pm6
     Stage start      :   0.000
-    Stage parse      :   6.154
+    Stage parse      :   6.113
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.039
-    Stage mast       :   0.130
-    Stage mbc        :   0.026
+    Stage mast       :   0.138
+    Stage mbc        :   0.027
 R: Handy::Roles::Signals::TabBar
-Stage parse      :   9.424
+Stage parse      :   8.924
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.003
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ActionRow === (126/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ActionRow.pm6
     Stage start      :   0.000
-    Stage parse      :   3.116
+    Stage parse      :   2.659
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.042
-    Stage mast       :   0.143
-    Stage mbc        :   0.008
+    Stage optimize   :   0.043
+    Stage mast       :   0.166
+    Stage mbc        :   0.012
 R: GLib::Roles::Signals::Generic
-Stage parse      :   6.278
+Stage parse      :   5.264
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ComboRow === (127/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ComboRow.pm6
     Stage start      :   0.000
-    Stage parse      :   3.280
+    Stage parse      :   3.986
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.038
-    Stage mast       :   0.136
-    Stage mbc        :   0.008
-Stage parse      :   6.556
+    Stage optimize   :   0.032
+    Stage mast       :   0.129
+    Stage mbc        :   0.016
+Stage parse      :   6.668
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.001
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::ExpanderRow === (128/129)
 Stage start      :   0.000
 
     precomp lib/Handy/ExpanderRow.pm6
     Stage start      :   0.000
-    Stage parse      :   3.086
+    Stage parse      :   2.617
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
-    Stage optimize   :   0.043
-    Stage mast       :   0.126
-    Stage mbc        :   0.008
-Stage parse      :   6.273
+    Stage optimize   :   0.042
+    Stage mast       :   0.157
+    Stage mbc        :   0.012
+Stage parse      :   5.293
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.002
-Stage mbc        :   0.002
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.000
 Stage moar       :   0.000
  === Handy::NonWidgets === (129/129)
 Stage start      :   0.000
 
     precomp lib/Handy/NonWidgets.pm6
     Stage start      :   0.000
-    Stage parse      :   5.521
+    Stage parse      :   5.558
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.001
-    Stage mast       :   0.113
-    Stage mbc        :   0.012
-Stage parse      :   8.901
+    Stage mast       :   0.131
+    Stage mbc        :   0.008
+Stage parse      :   8.940
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.002
@@ -1593,6 +1789,6 @@ Stage mast       :   0.004
 Stage mbc        :   0.000
 Stage moar       :   0.000
 
-real 539.77
-user 639.96
-sys 40.81
+real 569.51
+user 660.42
+sys 41.59
