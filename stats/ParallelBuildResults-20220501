@@ -1,0 +1,1456 @@
+
+Parallel build started for Raku 2022.04.26.g.280.a.2090.b on MoarVM 2022.04
+ === Handy::Raw::Exports (1/67) === 
+
+Stage start      :   0.000
+Stage parse      :   2.729
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.006
+Stage mast       :   0.029
+Stage mbc        :   0.008
+Stage moar       :   0.000
+
+Handy::Raw::Exports compile time: 4.47305549
+ === Handy::Raw::Definitions (2/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Definitions.pm6
+    Stage start      :   0.001
+    Stage parse      :   4.173
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.047
+    Stage mbc        :   0.015
+Stage parse      :   7.843
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.016
+Stage moar       :   0.000
+
+Handy::Raw::Definitions compile time: 9.18885146
+ === Handy::Raw::Enums (3/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Enums.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.158
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.029
+    Stage mbc        :   0.025
+Stage parse      :   8.133
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.025
+Stage mast       :   0.012
+Stage mbc        :   0.022
+Stage moar       :   0.000
+
+Handy::Raw::Enums compile time: 9.5496627
+ === Handy::Raw::PreferencesWindow (4/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/PreferencesWindow.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.267
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.023
+    Stage mast       :   0.038
+    Stage mbc        :   0.023
+Stage parse      :   8.303
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::PreferencesWindow compile time: 9.88173926
+ === Handy::Raw::PreferenceRow (5/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/PreferenceRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.499
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.046
+    Stage mbc        :   0.017
+Stage parse      :   8.453
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Raw::PreferenceRow compile time: 9.93477094
+ === Handy::Raw::StyleManager (6/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/StyleManager.pm6
+    Stage start      :   0.001
+    Stage parse      :   4.399
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.030
+    Stage mbc        :   0.019
+Stage parse      :   8.454
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.007
+Stage moar       :   0.000
+
+Handy::Raw::StyleManager compile time: 10.0830441
+ === Handy::Raw::SearchBar (7/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/SearchBar.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.097
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.041
+    Stage mbc        :   0.045
+Stage parse      :   8.878
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.019
+Stage moar       :   0.000
+
+Handy::Raw::SearchBar compile time: 10.17797786
+ === Handy::Raw::ActionRow (8/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ActionRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.201
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.069
+    Stage mbc        :   0.046
+Stage parse      :   8.948
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.008
+Stage mbc        :   0.020
+Stage moar       :   0.000
+
+Handy::Raw::ActionRow compile time: 10.36028186
+ === Handy::Raw::StatusPage (9/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/StatusPage.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.656
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.022
+    Stage mast       :   0.041
+    Stage mbc        :   0.027
+Stage parse      :   8.549
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.018
+Stage moar       :   0.000
+
+Handy::Raw::StatusPage compile time: 10.24302746
+ === Handy::Raw::Keypad (10/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Raw/Keypad.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.209
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.019
+    Stage mast       :   0.060
+    Stage mbc        :   0.140
+Stage parse      :   9.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::Keypad compile time: 10.30971315
+ === Handy::Raw::Avatar (11/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Raw/Avatar.pm6
+    Stage start      :   0.000
+    Stage parse      :   5.194
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.047
+    Stage mbc        :   0.078
+Stage parse      :   8.938
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.004
+Stage mbc        :   0.023
+Stage moar       :   0.000
+
+Handy::Raw::Avatar compile time: 10.4101143
+ === Handy::Raw::ExpanderRow (12/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ExpanderRow.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.645
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.022
+    Stage mast       :   0.064
+    Stage mbc        :   0.049
+Stage parse      :   8.947
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.016
+Stage mbc        :   0.007
+Stage moar       :   0.000
+
+Handy::Raw::ExpanderRow compile time: 10.35852314
+ === Handy::Raw::TabBar (13/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/TabBar.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.351
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.034
+    Stage mbc        :   0.041
+Stage parse      :   8.356
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.008
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::TabBar compile time: 10.1512023
+ === Handy::Raw::ComboRow (14/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ComboRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.967
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.029
+    Stage mast       :   0.040
+    Stage mbc        :   0.191
+Stage parse      :   8.989
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Raw::ComboRow compile time: 10.4516915
+ === Handy::Main (15/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Main.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.728
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.039
+    Stage mbc        :   0.008
+Stage parse      :   9.537
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Main compile time: 10.7276762
+ === Handy::Raw::Squeezer (16/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Squeezer.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Enums.pm6
+    Stage parse      :   4.824
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.056
+    Stage mbc        :   0.045
+Stage parse      :   8.880
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.006
+Stage mast       :   0.005
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Raw::Squeezer compile time: 10.5521702
+ === Handy::Raw::SwipeTracker (17/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/SwipeTracker.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.795
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.028
+    Stage mbc        :   0.037
+Stage parse      :   8.762
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::SwipeTracker compile time: 10.5174131
+ === Handy::Raw::Carousel (18/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Carousel.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.145
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.072
+    Stage mbc        :   0.154
+Stage parse      :   9.168
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::Carousel compile time: 10.69648691
+ === Handy::Raw::ViewSwitcherBar (19/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ViewSwitcherBar.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.426
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.034
+    Stage mbc        :   0.032
+Stage parse      :   8.394
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::ViewSwitcherBar compile time: 10.38981453
+ === Handy::Raw::Swipeable (20/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Swipeable.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   4.584
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.031
+    Stage mbc        :   0.030
+Stage parse      :   8.675
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.013
+Stage moar       :   0.000
+
+Handy::Raw::Swipeable compile time: 10.54207821
+ === Handy::Raw::ViewSwitcher (21/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/ViewSwitcher.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.242
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.035
+    Stage mbc        :   0.027
+Stage parse      :   8.352
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.011
+Stage moar       :   0.000
+
+Handy::Raw::ViewSwitcher compile time: 10.66812518
+ === Handy::Raw::HeaderBar (22/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/HeaderBar.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Definitions.pm6
+    Stage parse      :   5.566
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.034
+    Stage mast       :   0.072
+    Stage mbc        :   0.073
+Stage parse      :   9.469
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.008
+Stage mbc        :   0.004
+Stage moar       :   0.000
+
+Handy::Raw::HeaderBar compile time: 11.0702771
+ === Handy::Raw::HeaderGroup (23/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/HeaderGroup.pm6
+    Stage start      :   0.000
+    Stage parse      :   5.440
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.023
+    Stage mast       :   0.058
+    Stage mbc        :   0.158
+Stage parse      :   9.586
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Raw::HeaderGroup compile time: 11.05520051
+ === Handy::Raw::ViewSwitcherTitle (24/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Raw/ViewSwitcherTitle.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Enums.pm6
+    Stage parse      :   4.429
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.018
+    Stage mast       :   0.032
+    Stage mbc        :   0.153
+Stage parse      :   8.732
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.004
+Stage mbc        :   0.020
+Stage moar       :   0.000
+
+Handy::Raw::ViewSwitcherTitle compile time: 10.9756941
+ === Handy::Raw::Flap (25/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Flap.pm6
+    Stage start      :   0.001
+    
+        load    lib/Handy/Raw/Enums.pm6
+    Stage parse      :   6.228
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.028
+    Stage mast       :   0.052
+    Stage mbc        :   0.121
+Stage parse      :  10.243
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.004
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Raw::Flap compile time: 11.8561193
+ === Handy::Raw::Deck (26/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Deck.pm6
+    Stage start      :   0.000
+    Stage parse      :   5.780
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.036
+    Stage mast       :   0.067
+    Stage mbc        :   0.684
+Stage parse      :  10.730
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Raw::Deck compile time: 12.21716941
+ === Handy::Raw::Leaflet (27/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Leaflet.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Enums.pm6
+    Stage parse      :   6.202
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.046
+    Stage mast       :   0.067
+    Stage mbc        :   0.721
+Stage parse      :  10.995
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.008
+Stage mbc        :   0.013
+Stage moar       :   0.000
+
+Handy::Raw::Leaflet compile time: 12.31752883
+ === Handy::Raw::TabView (28/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Raw/TabView.pm6
+    Stage start      :   0.000
+    Stage parse      :   6.335
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.123
+    Stage mast       :   0.076
+    Stage mbc        :   0.207
+Stage parse      :  10.774
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.025
+Stage mbc        :   0.004
+Stage moar       :   0.000
+
+Handy::Raw::TabView compile time: 12.45309594
+ === Handy::Raw::Types (29/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Raw/Types.pm6
+    Stage start      :   0.001
+    Stage parse      :   8.881
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.056
+    Stage mbc        :   0.030
+Stage parse      :  12.722
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.060
+Stage mast       :   0.093
+Stage mbc        :   0.061
+Stage moar       :   0.000
+
+Handy::Raw::Types compile time: 14.72383309
+ === Handy::Roles::Signals::Swipeable (30/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Roles/Signals/Swipeable.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Types.pm6
+    Stage parse      :   9.435
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.080
+    Stage mast       :   0.111
+    Stage mbc        :   0.139
+Stage parse      :  14.484
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.003
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+
+Handy::Roles::Signals::Swipeable compile time: 16.38444467
+ === Handy::Roles::Signals::TabBar (31/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Roles/Signals/TabBar.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Types.pm6
+    Stage parse      :   7.264
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.062
+    Stage mast       :   0.065
+    Stage mbc        :   0.130
+Stage parse      :  12.227
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.005
+Stage moar       :   0.000
+
+Handy::Roles::Signals::TabBar compile time: 13.9374925
+ === Handy::Roles::Swipeable (32/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Roles/Swipeable.pm6
+    Stage start      :   0.000
+    Stage parse      :   3.938
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.068
+    Stage mast       :   0.109
+    Stage mbc        :   0.045
+Stage parse      :   8.407
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.005
+Stage moar       :   0.000
+
+Handy::Roles::Swipeable compile time: 9.63737549
+ === Handy::Roles::Signals::SwipeTracker (33/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Roles/Signals/SwipeTracker.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Raw/Types.pm6
+    Stage parse      :  12.076
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.075
+    Stage mast       :   0.102
+    Stage mbc        :   0.099
+Stage parse      :  17.091
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Roles::Signals::SwipeTracker compile time: 19.0035917
+ === Handy::Roles::Signals::Tab::View (34/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Roles/Signals/Tab/View.pm6
+    Stage start      :   0.001
+    
+        load    lib/Handy/Raw/Types.pm6
+    Stage parse      :  13.814
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.072
+    Stage mast       :   0.282
+    Stage mbc        :   0.446
+Stage parse      :  19.173
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+
+Handy::Roles::Signals::Tab::View compile time: 20.93172378
+ === Handy::SwipeTracker (35/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/SwipeTracker.pm6
+    Stage start      :   0.000
+    Stage parse      :  10.203
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.189
+    Stage mast       :   0.139
+    Stage mbc        :   0.093
+Stage parse      :  15.142
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.006
+Stage moar       :   0.000
+
+Handy::SwipeTracker compile time: 16.66363546
+ === Handy::StyleManager (36/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/StyleManager.pm6
+    Stage start      :   0.000
+    Stage parse      :  10.365
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.291
+    Stage mast       :   0.091
+    Stage mbc        :   0.096
+Stage parse      :  15.342
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.003
+Stage mbc        :   0.032
+Stage moar       :   0.000
+
+Handy::StyleManager compile time: 16.74819942
+ === Handy::SearchBar (37/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/SearchBar.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.202
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.069
+    Stage mast       :   0.193
+    Stage mbc        :   0.060
+Stage parse      :  19.990
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::SearchBar compile time: 21.3033943
+ === Handy::Squeezer (38/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Squeezer.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.206
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.075
+    Stage mast       :   0.186
+    Stage mbc        :   0.061
+Stage parse      :  19.964
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Squeezer compile time: 21.43813837
+ === Handy::Tab::Page (39/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/Tab/Page.pm6
+    Stage start      :   0.008
+    Stage parse      :  13.994
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.089
+    Stage mast       :   0.203
+    Stage mbc        :   0.059
+Stage parse      :  20.025
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Tab::Page compile time: 21.32128922
+ === Handy::StatusPage (40/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/StatusPage.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.380
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.049
+    Stage mast       :   0.181
+    Stage mbc        :   0.077
+Stage parse      :  20.213
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::StatusPage compile time: 21.64189414
+ === Handy::Avatar (41/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Avatar.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.405
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.091
+    Stage mast       :   0.224
+    Stage mbc        :   0.071
+Stage parse      :  19.712
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::Avatar compile time: 21.12756557
+ === Handy::WindowHandle (42/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/WindowHandle.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.811
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.043
+    Stage mast       :   0.188
+    Stage mbc        :   0.078
+Stage parse      :  19.866
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::WindowHandle compile time: 21.24722893
+ === Handy::ViewSwitcherBar (43/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ViewSwitcherBar.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.889
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.067
+    Stage mast       :   0.205
+    Stage mbc        :   0.061
+Stage parse      :  19.936
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.003
+Stage moar       :   0.000
+
+Handy::ViewSwitcherBar compile time: 21.50707891
+ === Handy::ViewSwitcherTitle (44/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ViewSwitcherTitle.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.127
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.065
+    Stage mast       :   0.199
+    Stage mbc        :   0.071
+Stage parse      :  20.102
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::ViewSwitcherTitle compile time: 21.55591962
+ === Handy::TitleBar (45/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/TitleBar.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.229
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.061
+    Stage mast       :   0.197
+    Stage mbc        :   0.085
+Stage parse      :  20.289
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::TitleBar compile time: 21.59490099
+ === Handy::HeaderBar (46/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/HeaderBar.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.530
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.097
+    Stage mast       :   0.171
+    Stage mbc        :   0.057
+Stage parse      :  19.512
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::HeaderBar compile time: 20.91002598
+ === Handy::Deck (47/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Deck.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.716
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.072
+    Stage mast       :   0.210
+    Stage mbc        :   0.069
+Stage parse      :  19.736
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Deck compile time: 21.11189222
+ === Handy::Window (48/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Window.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.497
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.062
+    Stage mast       :   0.212
+    Stage mbc        :   0.062
+Stage parse      :  20.389
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Window compile time: 21.95753
+ === Handy::Flap (49/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Flap.pm6
+    Stage start      :   0.001
+    Stage parse      :  14.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.086
+    Stage mast       :   0.213
+    Stage mbc        :   0.067
+Stage parse      :  19.929
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Flap compile time: 21.30840986
+ === Handy::ApplicationWindow (50/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ApplicationWindow.pm6
+    Stage start      :   0.015
+    Stage parse      :  14.672
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.056
+    Stage mast       :   0.215
+    Stage mbc        :   0.077
+Stage parse      :  20.560
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::ApplicationWindow compile time: 21.9591475
+ === Handy::Clamp (51/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Clamp.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.504
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.065
+    Stage mast       :   0.172
+    Stage mbc        :   0.086
+Stage parse      :  20.438
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Clamp compile time: 21.88709402
+ === Handy::Carousel (52/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Carousel.pm6
+    Stage start      :   0.000
+    Stage parse      :  14.937
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.095
+    Stage mast       :   0.207
+    Stage mbc        :   0.074
+Stage parse      :  20.606
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::Carousel compile time: 22.1732006
+ === Handy::Tab::View (53/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Tab/View.pm6
+    Stage start      :   0.000
+    Stage parse      :  15.754
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.084
+    Stage mast       :   0.253
+    Stage mbc        :   0.063
+Stage parse      :  21.167
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Tab::View compile time: 22.6201897
+ === Handy::Keypad (54/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Keypad.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.827
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.070
+    Stage mast       :   0.192
+    Stage mbc        :   0.067
+Stage parse      :  19.674
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Keypad compile time: 20.89618893
+ === Handy::ViewSwitcher (55/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ViewSwitcher.pm6
+    Stage start      :   0.000
+    Stage parse      :  15.275
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.052
+    Stage mast       :   0.174
+    Stage mbc        :   0.043
+Stage parse      :  21.010
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::ViewSwitcher compile time: 22.70881229
+ === Handy::HeaderGroup (56/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/HeaderGroup.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/HeaderBar.pm6
+    Stage parse      :  14.688
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.077
+    Stage mast       :   0.283
+    Stage mbc        :   0.070
+Stage parse      :  19.958
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.002
+Stage moar       :   0.000
+
+Handy::HeaderGroup compile time: 21.26570829
+ === Handy::Leaflet (57/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Leaflet.pm6
+    Stage start      :   0.000
+    Stage parse      :  13.808
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.078
+    Stage mast       :   0.216
+    Stage mbc        :   0.049
+Stage parse      :  19.484
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Leaflet compile time: 20.75991706
+ === Handy::PreferencesGroup (58/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/PreferencesGroup.pm6
+    Stage start      :   0.005
+    Stage parse      :  14.428
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.054
+    Stage mast       :   0.168
+    Stage mbc        :   0.061
+Stage parse      :  19.730
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::PreferencesGroup compile time: 20.8194061
+ === Handy::PreferencesWindow (59/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/PreferencesWindow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/Window.pm6
+    Stage parse      :   8.485
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.043
+    Stage mast       :   0.125
+    Stage mbc        :   0.012
+Stage parse      :  13.593
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::PreferencesWindow compile time: 14.972723
+ === Handy::Carousel::IndicatorLines (60/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Carousel/IndicatorLines.pm6
+    Stage start      :   0.003
+    
+        load    lib/Handy/Carousel.pm6
+    Stage parse      :  16.335
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.031
+    Stage mast       :   0.117
+    Stage mbc        :   0.043
+Stage parse      :  21.478
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Carousel::IndicatorLines compile time: 23.02496051
+ === Handy::Carousel::IndicatorDots (61/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Carousel/IndicatorDots.pm6
+    Stage start      :   0.001
+    
+        load    lib/Handy/Carousel.pm6
+    Stage parse      :  16.871
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.038
+    Stage mast       :   0.115
+    Stage mbc        :   0.043
+Stage parse      :  21.743
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Carousel::IndicatorDots compile time: 23.21541786
+ === Handy::PreferencesPage (62/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/PreferencesPage.pm6
+    Stage start      :   0.000
+    Stage parse      :  12.868
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.026
+    Stage mast       :   0.091
+    Stage mbc        :   0.049
+Stage parse      :  17.857
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::PreferencesPage compile time: 19.48149043
+ === Handy::PreferencesRow (63/67) === 
+
+Stage start      :   0.001
+
+    precomp lib/Handy/PreferencesRow.pm6
+    Stage start      :   0.000
+    Stage parse      :  11.131
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.024
+    Stage mast       :   0.088
+    Stage mbc        :   0.028
+Stage parse      :  16.044
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::PreferencesRow compile time: 17.81450906
+ === Handy::Tab::Bar (64/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/Tab/Bar.pm6
+    Stage start      :   0.001
+    Stage parse      :  10.250
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.029
+    Stage mast       :   0.097
+    Stage mbc        :   0.028
+Stage parse      :  15.218
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::Tab::Bar compile time: 16.58226355
+ === Handy::ActionRow (65/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ActionRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/PreferencesRow.pm6
+    Stage parse      :   9.866
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.031
+    Stage mast       :   0.102
+    Stage mbc        :   0.010
+Stage parse      :  14.623
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::ActionRow compile time: 16.29925837
+ === Handy::ExpanderRow (66/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ExpanderRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/ActionRow.pm6
+    Stage parse      :   5.376
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.030
+    Stage mast       :   0.089
+    Stage mbc        :   0.010
+Stage parse      :   9.112
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::ExpanderRow compile time: 10.25770854
+ === Handy::ComboRow (67/67) === 
+
+Stage start      :   0.000
+
+    precomp lib/Handy/ComboRow.pm6
+    Stage start      :   0.000
+    
+        load    lib/Handy/ActionRow.pm6
+    Stage parse      :   9.805
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.027
+    Stage mast       :   0.093
+    Stage mbc        :   0.016
+Stage parse      :  14.361
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+Handy::ComboRow compile time: 16.05830886
+
+Total compile time: 37.532585s
