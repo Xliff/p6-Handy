@@ -20,14 +20,19 @@ $a.activate.tap( -> *@a {
   $lb.pack_start($_) for $ll, $ls;
    $b.pack_start($_) for $sb, $lb, $e, $k;
 
-  $ss.state-changed.tap( -> *@a {
+  $ss.notify('active').tap( -> *@a {
     say "SS Active: { $ss.active }";
     $k.symbols-visible = $ss.active;
   });
 
-  $ls.state-changed.tap( -> *@a {
+  $ls.notify('active').tap( -> *@a {
     say "LS Active: { $ls.active }";
     $k.letters-visible = $ls.active;
+  });
+
+  $a.window.destroy-signal.tap( -> *@a {
+    say "Keypad entry: { $e.text }";
+    $a.quit;
   });
 
   $k.entry = $e;
