@@ -35,7 +35,7 @@ class Handy::Keypad is GTK::Bin {
         cast(HdyKeypad, $_);
       }
     }
-    self.setGtkBin($to-parent);
+    self.setBin($to-parent);
   }
 
   method Handy::Raw::Definitions::HdyKeypad
@@ -53,8 +53,12 @@ class Handy::Keypad is GTK::Bin {
     $o.ref if $ref;
     $o;
   }
-  multi method new (Int() $symbols_visible, Int() $letters_visible) {
-    my gboolean ($s, $l) = ($symbols_visible, $letters_visible)».so.Int;
+  multi method new (
+    Int() $symbols_visible,
+    Int() $letters_visible
+  ) {
+    my gboolean ($s, $l) =
+      ($symbols_visible, $letters_visible).map( *.so.Int );
 
     my $handy-keypad = hdy_keypad_new($s, $l);
 
@@ -62,7 +66,7 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: uint
-  method column-spacing is rw  is g-property {
+  method column-spacing is rw  is g-property is also<column_spacing> {
     my $gv = GLib::Value.new( G_TYPE_UINT );
     Proxy.new(
       FETCH => sub ($) {
@@ -77,7 +81,11 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: GtkWidget
-  method end-action ( :$raw = False ) is rw  is g-property {
+  method end-action ( :$raw = False )
+    is rw
+    is g-property
+    is also<end_action>
+  {
     my $gv = GLib::Value.new( GTK::Widget.get_type );
     Proxy.new(
       FETCH => sub ($) {
@@ -115,7 +123,7 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: boolean
-  method letters-visible is rw  is g-property {
+  method letters-visible is rw  is g-property is also<letters_visible> {
     my $gv = GLib::Value.new( G_TYPE_BOOLEAN );
     Proxy.new(
       FETCH => sub ($) {
@@ -130,7 +138,7 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: uint
-  method row-spacing is rw  is g-property {
+  method row-spacing is rw  is g-property is also<row_spacing> {
     my $gv = GLib::Value.new( G_TYPE_UINT );
     Proxy.new(
       FETCH => sub ($) {
@@ -145,7 +153,11 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: GtkWidget
-  method start-action ( :$raw = False ) is rw  is g-property {
+  method start-action ( :$raw = False )
+    is rw
+    is g-property
+    is also<start_action>
+  {
     my $gv = GLib::Value.new( GTK::Widget.get_type );
     Proxy.new(
       FETCH => sub ($) {
@@ -164,7 +176,7 @@ class Handy::Keypad is GTK::Bin {
   }
 
   # Type: boolean
-  method symbols-visible is rw  is g-property {
+  method symbols-visible is rw  is g-property is also<symbols_visible> {
     my $gv = GLib::Value.new( G_TYPE_BOOLEAN );
     Proxy.new(
       FETCH => sub ($) {
