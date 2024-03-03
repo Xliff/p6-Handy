@@ -10,11 +10,12 @@ use GDK::Raw::Exports;
 use GTK::Raw::Exports;
 use Handy::Raw::Exports;
 
-my constant forced = 0;
+my constant forced = 183;
 
 unit package Handy::Raw::Types;
 
 need Cairo;
+need GLib::Raw::Debug;
 need GLib::Raw::Definitions;
 need GLib::Raw::Enums;
 need GLib::Raw::Exceptions;
@@ -23,6 +24,7 @@ need GLib::Raw::Structs;
 need GLib::Raw::Struct_Subs;
 need GLib::Raw::Subs;
 need GLib::Roles::Pointers;
+need GLib::Roles::Implementor;
 need ATK::Raw::Definitions;
 need ATK::Raw::Enums;
 need ATK::Raw::Structs;
